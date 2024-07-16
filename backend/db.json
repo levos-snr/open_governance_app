@@ -1,7 +1,60 @@
 {
-  "complaints": [],
-  "users": [],
-  "serviceProviders": [],
+        "budget": [
+                {
+                        "id": 1,
+                        "budgetItem": "Road Construction",
+                        "amount": 1000000,
+                        "location": "Mombasa",
+                        "status": "pending",
+                        "createdOn": "2019-09-01",
+                        "createdBy": "admin"
+                }
+        ],
+
+  "citizen_complaints": [
+                {
+                  "id":1,
+                        "complaint":"The road is too narrow",
+                        "location":"Mombasa",
+                        "status":"pending",
+                        "createdOn":"2019-09-01",
+                        "createdBy":"user",
+                        "type":"red-flag",
+                        "images":"image1.jpg",
+                        "videos":"video1.mp4"
+                }
+                   
+  ],
+  
+  "users": [
+          {
+            "id": 1,
+            "username": "admin1",
+            "email": "admin1@gmail.com",
+            "phone": "0712345678",
+            "password": "admin1",
+            "role": "admin",
+            "location":"Mombasa"
+          },
+         {
+                 "id": 2,
+                "username": "user1",
+                "email": "user1@gmail.com",
+                "phone": "0712345674",
+                "password": "user1",
+                "role": "user",
+                "location":"Kwale"
+        },
+        {
+                "id": 3,
+                "username": "user2",
+                "phone": "0712345675",
+                "email": "user2@gmail.com",
+                "password": "user2",
+                "role": "user",
+                "location":"Kilifi"
+        }
+  ],
   "county":[
                 {
                         "1":"Mombasa",
@@ -21,6 +74,7 @@
                         "governor":"Salim Mvurya",
                         "senator":"Issa Juma",
                         "womenRep":"Zuleikha Juma",
+                        "postalAbb":"KLE"
                 },
                 {
                   "3":"Kilifi",
@@ -131,6 +185,347 @@
                         "senator":"Kithure Kindiki",
                         "womenRep":"Beatrice Nkatha",
                         "postalAbb":"TNH"
+                },
+                {
+                        "14":"Embu",
+                        "Area":2821.2,
+                        "population":608599,
+                        "capital":"Embu",
+                        "governor":"Martin Wambora",
+                        "senator":"Njeru Ndwiga",
+                        "womenRep":"Jane Wanjuki",
+                        "postalAbb":"EBU"
+                },
+                {
+                        "15":"Kitui",
+                        "Area":24321.1,
+                        "population":1136187,
+                        "capital":"Kitui",
+                        "governor":"Charity Ngilu",
+                        "senator":"Enoch Wambua",
+                        "womenRep":"Irene Kasalu",
+                        "postalAbb":"KTI"
+                },
+                {
+                        "16":"Machakos",
+                        "Area":5339.7,
+                        "population":1421932,
+                        "capital":"Machakos",
+                        "governor":"Alfred Mutua",
+                        "senator":"Boniface Kabaka",
+                        "womenRep":"Joyce Kamene",
+                        "postalAbb":"MKS"
+                },
+                {
+                        "17":"Makueni",
+                        "Area":8008.9,
+                        "population":987653,
+                        "capital":"Wote",
+                        "governor":"Kivutha Kibwana",
+                        "senator":"Mutula Kilonzo",
+                        "womenRep":"Rose Museo",
+                        "postalAbb":"MKN"
+                },
+                {
+                        "18":"Nyandarua",
+                        "Area":3247.7,
+                        "population":596268,
+                        "capital":"Ol Kalou",
+                        "governor":"Francis Kimemia",
+                        "senator":"Mwangi Githiomi",
+                        "womenRep":"Faith Gitau",
+                        "postalAbb":"NYD"
+                },
+                {
+                        "19":"Nyeri",
+                        "Area":2361.0,
+                        "population":759164,
+                        "capital":"Nyeri",
+                        "governor":"Mutahi Kahiga",
+                        "senator":"Ephraim Maina",
+                        "womenRep":"Rahab Mukami",
+                        "postalAbb":"NYR"
+                },
+                {
+                        "20":"Kirinyaga",
+                        "Area":1477.1,
+                        "population":528054,
+                        "capital":"Kerugoya",
+                        "governor":"Anne Waiguru",
+                        "senator":"Charles Kibiru",
+                        "womenRep":"Purity Ngirici",
+                        "postalAbb":"KYG"
+                },
+                {
+                        "21":"Murang'a",
+                        "Area":2521.2,
+                        "population":1056644,
+                        "capital":"Murang'a",
+                        "governor":"Mwangi wa Iria",
+                        "senator":"Irungu Kang'ata",
+                        "womenRep":"Sabina Chege",
+                        "postalAbb":"MUR"
+                },
+                {
+                        "22":"Kiambu",
+                        "Area":2449.2,
+                        "population":2417735,
+                        "capital":"Kiambu",
+                        "governor":"James Nyoro",
+                        "senator":"Kimani Wamatangi",
+                        "womenRep":"Gathoni wa Muchomba",
+                        "postalAbb":"KBU"
+                },
+                {
+                        "23":"Turkana",
+                        "Area":68244.3,
+                        "population":926976,
+                        "capital":"Lodwar",
+                        "governor":"Josphat Nanok",
+                        "senator":"Malachy Ekal",
+                        "womenRep":"Joyce Emanikor",
+                        "postalAbb":"TRN"
+                },
+                {
+                        "24":"West Pokot",
+                        "Area":8962.9,
+                        "population":512690,
+                        "capital":"Kapenguria",
+                        "governor":"John Lonyangapuo",
+                        "senator":"Samson Cherargei",
+                        "womenRep":"Lilian Tomitom",
+                        "postalAbb":"WPT"
+                },
+                {
+                        "25":"Samburu",
+                        "Area":20182.5,
+                        "population":310327,
+                        "capital":"Maralal",
+                        "governor":"Moses Lenolkulal",
+                        "senator":"Steve Lelegwe",
+                        "womenRep":"Maison Leshoomo",
+                        "postalAbb":"SBR"
+                },
+                {
+                        "26":"Trans-Nzoia",
+                        "Area":2495.5,
+                        "population":990341,
+                        "capital":"Kitale",
+                        "governor":"Patrick Khaemba",
+                        "senator":"Michael Mbito",
+                        "womenRep":"Janet Nangabo",
+                        "postalAbb":"TNZ"
+                },
+                {
+                        "27":"Uasin Gishu",
+                        "Area":3342.9,
+                        "population":1163186,
+                        "capital":"Eldoret",
+                        "governor":"Jackson Mandago",
+                        "senator":"Margaret Kamar",
+                        "womenRep":"Gladys Shollei",
+                        "postalAbb":"UGU"
+                },
+                {
+                        "28":"Elgeyo-Marakwet",
+                        "Area":3026.9,
+                        "population":369998,
+                        "capital":"Iten",
+                        "governor":"Alex Tolgos",
+                        "senator":"Kipchumba Murkomen",
+                        "womenRep":"Jane Chebaibai",
+                        "postalAbb":"EKT"
+                },
+                {
+                        "29":"Nandi",
+                        "Area":2884.5,
+                        "population":885711,
+                        "capital":"Kapsabet",
+                        "governor":"Stephen Sang",
+                        "senator":"Samson Cherargei",
+                        "womenRep":"Tecla Tum",
+                        "postalAbb":"NDI"
+                },
+                {
+                        "30":"Baringo",
+                        "Area":11072.9,
+                        "population":666763,
+                        "capital":"Kabarnet",
+                        "governor":"Stanley Kiptis",
+                        "senator":"Gideon Moi",
+                        "womenRep":"Gladwell Cheruiyot",
+                        "postalAbb":"BRG"
+                },
+                {
+                        "31":"Laikipia",
+                        "Area":8697.7,
+                        "population":399227,
+                        "capital":"Nanyuki",
+                        "governor":"Ndiritu Muriithi",
+                        "senator":"John Kinyua",
+                        "womenRep":"Catherine Waruguru",
+                        "postalAbb":"LKP"
+                },
+                {
+                        "32":"Nakuru",
+                        "Area":7492.2,
+                        "population":2162202,
+                        "capital":"Nakuru",
+                        "governor":"Lee Kinyanjui",
+                        "senator":"Susan Kihika",
+                        "womenRep":"Liza Chelule",
+                        "postalAbb":"NKR"
+                },
+                {
+                        "33":"Narok",
+                        "Area":17921.2,
+                        "population":850920,
+                        "capital":"Narok",
+                        "governor":"Samuel Tunai",
+                        "senator":"Ledama Olekina",
+                        "womenRep":"Soipan Tuya",
+                        "postalAbb":"NRK"
+                },
+                {
+                        "34":"Kajiado",
+                        "Area":21127.0,
+                        "population":687312,
+                        "capital":"Kajiado",
+                        "governor":"Joseph Ole Lenku",
+                        "senator":"Philip Mpaayei",
+                        "womenRep":"Janet Teyiaa",
+                        "postalAbb":"KJD"
+                },
+                {
+                        "35":"Kericho",
+                        "Area":2450.5,
+                        "population":901777,
+                        "capital":"Kericho",
+                        "governor":"Paul Chepkwony",
+                        "senator":"Aaron Cheruiyot",
+                        "womenRep":"Florence Bore",
+                        "postalAbb":"KRC"
+                },
+                {
+                        "36":"Bomet",
+                        "Area":2488.4,
+                        "population":875689,
+                        "capital":"Bomet",
+                        "governor":"Hillary Barchok",
+                        "senator":"Christopher Langat",
+                        "womenRep":"Joyce Korir",
+                        "postalAbb":"BMT"
+                },
+                {
+                        "37":"Kakamega",
+                        "Area":3050.3,
+                        "population":1867578,
+                        "capital":"Kakamega",
+                        "governor":"Wycliffe Oparanya",
+                        "senator":"Cleophas Malala",
+                        "womenRep":"Elisabeth Atieno",
+                        "postalAbb":"KGM"
+                },
+                {
+                        "38":"Vihiga",
+                        "Area":531.3,
+                        "population":590013,
+                        "capital":"Vihiga",
+                        "governor":"Wilber Ottichilo",
+                        "senator":"George Khaniri",
+                        "womenRep":"Beatrice Adagala",
+                        "postalAbb":"VGA"
+                },
+                {
+                        "39":"Bungoma",
+                        "Area":3032.2,
+                        "population":1670570,
+                        "capital":"Bungoma",
+                        "governor":"Wycliffe Wangamati",
+                        "senator":"Moses Wetangula",
+                        "womenRep":"Catherine Wambilianga",
+                        "postalAbb":"BGM"
+                },
+                {
+                        "40":"Busia",
+                        "Area":1695.3,
+                        "population":743946,
+                        "capital":"Busia",
+                        "governor":"Sospeter Ojaamong",
+                        "senator":"Amos Wako",
+                        "womenRep":"Florence Mutua",
+                        "postalAbb":"BSA"
+                },
+                {
+                        "41":"Siaya",
+                        "Area":2596.1,
+                        "population":993183,
+                        "capital":"Siaya",
+                        "governor":"Cornel Rasanga",
+                        "senator":"James Orengo",
+                        "womenRep":"Christine Ombaka",
+                        "postalAbb":"SYA"
+                },
+                {
+                        "42":"Kisumu",
+                        "Area":2085.9,
+                        "population":1152282,
+                        "capital":"Kisumu",
+                        "governor":"Anyang Nyong'o",
+                        "senator":"Fred Outa",
+                        "womenRep":"Rosa Buyu",
+                        "postalAbb":"KSM"
+                },
+                {
+                        "43":"Homa Bay",
+                        "Area":3155.3,
+                        "population":1125009,
+                        "capital":"Homa Bay",
+                        "governor":"Cyprian Awiti",
+                        "senator":"Moses Kajwang",
+                        "womenRep":"Gladys Wanga",
+                        "postalAbb":"HBY"
+                },
+                {
+                        "44":"Migori",
+                        "Area":2596.1,
+                        "population":917170,
+                        "capital":"Migori",
+                        "governor":"Okoth Obado",
+                        "senator":"Ochillo Ayacko",
+                        "womenRep":"Pamela Odhiambo",
+                        "postalAbb":"MGR"
+                },
+                {
+                        "45":"Kisii",
+                        "Area":1307.5,
+                        "population":1152282,
+                        "capital":"Kisii",
+                        "governor":"James Ongwae",
+                        "senator":"Sam Ongeri",
+                        "womenRep":"Janet Ongera",
+                        "postalAbb":"KSI"
+                },
+                {
+                        "46":"Nyamira",
+                        "Area":912.5,
+                        "population":605576,
+                        "capital":"Nyamira",
+                        "governor":"John Nyagarama",
+                        "senator":"Okong'o Omogeni",
+                        "womenRep":"Jerusha Momanyi",
+                        "postalAbb":"NYM"
+                },
+                {
+                        "47":"Nairobi",
+                        "Area":694.9,
+                        "population":4397073,
+                        "capital":"Nairobi",
+                        "governor":"Mike Sonko",
+                        "senator":"Johnson Sakaja",
+                        "womenRep":"Esther Passaris",
+                        "postalAbb":"NRB"
                 }
+                
         ]
 }

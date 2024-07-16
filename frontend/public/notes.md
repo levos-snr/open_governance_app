@@ -1,0 +1,1 @@
+The third basis of sharing revenue takes into account eight parameters: Basic share (20 per cent), Population (18 per cent), Health (17 per cent), Poverty Level (14 per cent), Agriculture (10 per cent), Roads (eight per cent), Land (eight per cent) and Urban (five per cent).
