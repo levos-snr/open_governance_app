@@ -1,0 +1,136 @@
+{
+  "complaints": [],
+  "users": [],
+  "serviceProviders": [],
+  "county":[
+                {
+                        "1":"Mombasa",
+                        "Area":212.5,
+                       "population":939370,
+                       "capital":"Mombasa",
+                        "governor":"Ali Hassan Joho",
+                        "senator":"Mohammed Faki",
+                        "womenRep":"Mishi Mboko",
+                        "postalAbb":"MSA"
+                },
+                {
+                        "2":"Kwale",
+                        "Area":8270.2,
+                        "population":649931,
+                        "capital":"Kwale",
+                        "governor":"Salim Mvurya",
+                        "senator":"Issa Juma",
+                        "womenRep":"Zuleikha Juma",
+                },
+                {
+                  "3":"Kilifi",
+                        "Area":12335.2,
+                        "population":1453787,
+                        "capital":"Kilifi",
+                        "governor":"Amason Kingi",
+                        "senator":"Stewart Madzayo",
+                        "womenRep":"Gertrude Mbeyu",
+                        "postalAbb":"KLF"
+                },
+                {
+                        "4":"Tana River",
+                        "Area":3530.2,
+                        "population":315943,
+                        "capital":"Hola",
+                        "governor":"Dhadho Godhana",
+                        "senator":"Juma Wario",
+                        "womenRep":"Rehema Hassan",
+                        "postalAbb":"TRV"
+                },
+                {
+                        "5":"Lamu",
+                        "Area":6497.7,
+                        "population":101539,
+                        "capital":"Lamu",
+                        "governor":"Fahim Twaha",
+                        "senator":"Anwar Loitiptip",
+                        "womenRep":"Ruweida Obbo",
+                        "postalAbb":"LMU"
+                },
+                {
+                        "6":"Taita-Taveta",
+                        "Area":17083.9,
+                        "population":284657,
+                        "capital":"Voi",
+                        "governor":"Granton Samboja",
+                        "senator":"Jones Mwaruma",
+                        "womenRep":"Lydia Haika",
+                        "postalAbb":"TTA"
+                },
+                {
+                        "7":"Garissa",
+                        "Area":44617.8,
+                        "population":623060,
+                        "capital":"Garissa",
+                        "governor":"Ali Korane",
+                        "senator":"Yusuf Haji",
+                        "womenRep":"Anab Subow",
+                        "postalAbb":"GSA"
+                },
+                {
+                        "8":"Wajir",
+                        "Area":55856.3,
+                        "population":661941,
+                        "capital":"Wajir",
+                        "governor":"Mohamed Abdi",
+                        "senator":"Abdirahman Ali",
+                        "womenRep":"Fatuma Gedi",
+                        "postalAbb":"WJR"
+                },
+                {
+                        "9":"Mandera",
+                        "Area":25308.3,
+                        "population":867457,
+                        "capital":"Mandera",
+                        "governor":"Ali Roba",
+                        "senator":"Mohamed Mahamud",
+                        "womenRep":"Amina Gedow",
+                        "postalAbb":"MDR"
+                },
+                {
+                        "10":"Marsabit",
+                        "Area":66990.3,
+                        "population":291166,
+                        "capital":"Marsabit",
+                        "governor":"Mohamed Mohamud",
+                        "senator":"Godana Hargura",
+                        "womenRep":"Sofia Abdi",
+                        "postalAbb":"MST"
+                },
+                {
+                        "11":"Isiolo",
+                        "Area":25336.1,
+                        "population":268002,
+                        "capital":"Isiolo",
+                        "governor":"Mohamed Kuti",
+                        "senator":"Fatuma Dullo",
+                        "womenRep":"Rehema Jaldesa",
+                        "postalAbb":"ISL"
+                },
+                {
+                        "12":"Meru",
+                        "Area":6948.3,
+                        "population":1356301,
+                        "capital":"Meru",
+                        "governor":"Kiraitu Murungi",
+                        "senator":"Mithika Linturi",
+                        "womenRep":"Kawira Mwangaza",
+                        "postalAbb":"MRU"
+                },
+                {
+                        "13":"Tharaka-Nithi",
+                        "Area":2609.5,
+                        "population":365330,
+                        "capital":"Kathwana",
+                        "governor":"Muthomi Njuki",
+                        "senator":"Kithure Kindiki",
+                        "womenRep":"Beatrice Nkatha",
+                        "postalAbb":"TNH"
+                }
+        ]
+}

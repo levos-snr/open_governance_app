@@ -12,19 +12,19 @@ Therefore, there is a pressing need to develop a comprehensive, transparent, and
 ### Solution Statement:
 
 The app will create an integrated digital platform that allows all Kenyan citizens to report and follow up on their complaints seamlessly. The platform will feature:
-1. User Authentication:
+1. User Authentication
 
 [X] User registration and login for online complaint submission.
 [X] Mobile number verification for SMS-based reporting.
 [X] User profile management.
 
-2. Complaint Submission:
+1. Complaint Submission:
 [X] Multiple submission channels: SMS, online, in-person.
 [X] Unique tracking number for each complaint.
 [X] Acknowledgment notification upon submission.
 [X] Complaint categorization.
 
-3. Complaint Tracking:
+1. Complaint Tracking:
 
 [X] Real-time status updates.
 [X] SMS notifications for updates.
