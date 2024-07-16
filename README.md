@@ -13,50 +13,85 @@ Therefore, there is a pressing need to develop a comprehensive, transparent, and
 
 The app will create an integrated digital platform that allows all Kenyan citizens to report and follow up on their complaints seamlessly. The platform will feature:
 1. User Authentication:
-        [ ] - User registration and login for online complaint submission.
-        [ ] - Mobile number verification for SMS-based reporting.
-        [ ] - User profile management.
+
+[X] User registration and login for online complaint submission.
+[X] Mobile number verification for SMS-based reporting.
+[X] User profile management.
+
 2. Complaint Submission:
-        [ ] - Multiple submission channels: SMS, online, in-person.
-        [ ] - Unique tracking number for each complaint.
-        [ ] - Acknowledgment notification upon submission.
-        [ ] - Complaint categorization.
+[X] Multiple submission channels: SMS, online, in-person.
+[X] Unique tracking number for each complaint.
+[X] Acknowledgment notification upon submission.
+[X] Complaint categorization.
+
 3. Complaint Tracking:
-        [ ] - Real-time status updates.
-        [ ] - SMS notifications for updates.
-        [ ] - Complaint resolution timeline.
+
+[X] Real-time status updates.
+[X] SMS notifications for updates.
+[X] Complaint resolution timeline.
+
 4. Feedback Mechanism:
-        [ ] - User feedback on complaint resolution.
-        [ ] - User satisfaction rating.
-        [ ] - User feedback on the platform.
+
+[X] User feedback on complaint resolution.
+[X] User satisfaction rating.
+[X] User feedback on the platform.
+
 5. Role Management:
-        [ ] - Admin, user, and moderator roles.
-        [ ] - Admin dashboard for complaint management.
-        [ ] - Moderator dashboard for complaint resolution.
+
+[X] Admin, user, and moderator roles.
+[X] Admin dashboard for complaint management.
+[X] Moderator dashboard for complaint resolution.
+
 6. Data Management:
-        [ ] - Use of env variables for sensitive data.
+
+[X] Use of env variables for sensitive data.
+
 7. Notification and Reminder:
-        [ ] - SMS notifications for complaint updates.
-        [ ] - Email notifications for complaint updates.
-        [ ] - Reminder notifications for pending complaints.
+
+[X] SMS notifications for complaint updates.
+[X] Email notifications for complaint updates.
+[X] Reminder notifications for pending complaints.
 
 ## System Architecture
 <hr>
-        [ ] - HTML, CSS, JavaScript.
-        [ ] - Json - server for API( Restful API).
-        [ ] - Tailwind CSS for styling.
-        [ ] - Twilio for SMS notifications.
-        [ ] - SendGrid for email notifications.
-        [ ] - Node.js for backend.
-        [ ] - Hosted on Netlify.
-        [ ] - Postman for API testing.
-        [ ] - GitHub for version control.
+
+[X] HTML, CSS, JavaScript.
+[X] Json - server for API( Restful API).
+[X] Tailwind CSS for styling.
+[X] Twilio for SMS notifications.
+[X] SendGrid for email notifications.
+[X] Node.js for backend.
+[X] Hosted on Netlify.
+[X] Postman for API testing.
+[X] GitHub for version control.
 
 ## How to get started
 <hr>
-        - Clone the repository ```git clone https://github.com/levos-snr/open_governance_app.git```
-        - Install dependencies ```npm install json-server tailwindcss```
-        - Run the app ```liver-server .``` or ```http-server```
-        - Run the API ```json-server --watch db.json```
-        - Open the app on your browser ```http://localhost:****```
-        - Start server ```node backend/server.js```
+        - Clone the repository
+        ```
+        git clone https://github.com/levos-snr/open_governance_app.git
+        ```
+        - Install dependencies 
+        ```
+        npm install json-server tailwindcss
+        ```
+        - Run the app 
+        ```
+        liver-server .
+        ``` 
+        or 
+        ```
+        http-server
+        ```
+        - Run the API 
+        ```
+        json-server --watch db.json
+        ```
+        - Open the app on your browser 
+        ```
+        http://localhost:****
+        ```
+        - Start server 
+        ```
+        node backend/server.js
+        ```
