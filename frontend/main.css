@@ -1,254 +1,625 @@
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #23242a;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #1c1c1c;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.nav.active {
+    width: 60px;
+}
+
+.nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.nav ul li:hover {
+    background-color: #1cc;
+}
+
+.nav ul li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.nav ul li:nth-child(1):hover {
+    background: transparent;
+}
+
+.nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav ul li a .icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav ul li a .icon .fa-solid {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+.main.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.main .topbar {
+    width: 100%;
+    background: #1c1c1c;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: "\f1de";
+    font-family: "fontAwesome";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.search label .fa-searchengin {
+    position: absolute;
+    left: 15px;
+    top: 4px;
+    color: #333;
+    font-size: 20px;
+}
+
+.user {
+    position: relative;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBox {
+    poqstion: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.cardBox .card:hover {
+    transform: translateY(-2px);
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+.cardBox .card .cardName {
+        margin-top: 16px;
+    color: #333;
+}
+
+.cardBox .card .iconBox {
+position: absolute;
+    font-size: 1.3em;
+    bottom: 16px;
+    right: 12px;
+    color: #333;
+}
+
+.details {
+    position: relative;
+    padding-top: 0;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+.details .recentOrders {
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: #1c1c1c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recentOrders table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOrders table tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentOrders table tbody tr:hover {
+    color: #fff;
+    background: #1cc;
+}
+
+.details .recentOrders table tr td {
+    padding: 9px 5px;
+}
+.details .recentOrders table thead tr td:last-child,
+.details .recentOrders table tbody tr td:last-child {
+    text-align: right;
+}
+
+.details .recentOrders table thead tr td:nth-child(2),
+.details .recentOrders table tbody tr td:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.details .recentOrders table thead tr td:nth-child(3),
+.details .recentOrders table tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+.status {
+    position: relative;
+    padding: 5px 10px;
+    background: #1c1c1c;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.status.pending {
+    background: #f1c40f;
+}
+
+.status.delivered {
+    background: #2ecc71;
+}
+
+.status.cancelled {
+    background: #e74c3c;
+}
+
+.details .recentCustomers {
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details .recentCustomers .imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details .recentCustomers .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details .recentCustomers table tr:hover {
+    color: #fff;
+    background: #1cc;
+}
+
+.details .recentCustomers table tr td {
+    padding: 7px 10px;
+}
+
+.details .recentCustomers table tr td h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.details .recentCustomers table tr td h4 span {
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
 }
 
 #login,
-#signup{
-        display: none;
+#signup {
+    display: none;
 }
 
 .login,
-.signup
-{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: #23242a;
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #23242a;
 }
 
-.loginPageBox
-{
-        position: relative;
-        width: 380px;
-        background: #1c1c1c;
-        height: 420px;
-        border-radius: 8px;
-        overflow: hidden;
-        z-index: 1;
+.loginPageBox {
+    position: relative;
+    width: 380px;
+    background: #1c1c1c;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.signupPageBox{
-        position: relative;
-        width: 380px;
-        background: #1c1c1c;
-        height: 680px;
-        border-radius: 8px;
-        overflow: hidden;
-        z-index: 1;
-        margin: 30px;
+.signupPageBox {
+    position: relative;
+    width: 380px;
+    background: #1c1c1c;
+    height: 680px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 30px;
 }
 
 .loginPageBox::before,
-.signupPageBox::before{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 300px;
-        height: 420px;
-        background: linear-gradient(0deg, transparent,transparent, #45f3ff,#45f3ff,#45f3ff);
-        z-index: -1;
-        transform-origin:bottom right; ;
-        animation: animate 6s linear infinite;
+.signupPageBox::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: -1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
 }
-.signupPageBox::before{
-        height:680px!important;
+.signupPageBox::before {
+    height: 680px !important;
 }
 .loginPageBox::after,
-.signupPageBox::after{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 380px;
-        height: 420px;
-        background: linear-gradient(0deg, transparent,transparent, #45f3ff,#45f3ff,#45f3ff);
-        z-index: -1;
-        transform-origin:bottom right; ;
-        animation: animate 6s linear infinite;
-        animation-delay: 3s;
+.signupPageBox::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: -1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: 3s;
 }
-.signupPageBox::after{
-        height:680px!important;
+.signupPageBox::after {
+    height: 680px !important;
 }
 
 .borderLine,
-.signupborderLine
-{
-        position: absolute;
-        top: 0;
-        inset: 0;
+.signupborderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
 }
 
 .borderLine::before,
-.signupborderLine::before{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 300px;
-        height: 420px;
-        background: linear-gradient(0deg, transparent,transparent, #ff2770,#ff2770,#ff2770);
-        z-index: 0;
-        transform-origin:bottom right; ;
-        animation: animate 6s linear infinite;
-        animation-delay: -1.5s;
+.signupborderLine::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 0;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
 }
-.signupborderLine::before{
-         height: 680px!important;
+.signupborderLine::before {
+    height: 680px !important;
 }
 
 .borderLine::after,
-.signupborderLine::after{
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 300px;
-        height: 420px;
-        background: linear-gradient(0deg, transparent,transparent, #ff2770,#ff2770,#ff2770);
-        z-index: 0;
-        transform-origin:bottom right; ;
-        animation: animate 6s linear infinite;
-        animation-delay: -4.5s;
+.signupborderLine::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 0;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
 }
 
-.signupborderLine::after{
-        height: 680px!important;
+.signupborderLine::after {
+    height: 680px !important;
 }
 
-
-@keyframes animate{
-        0%{
-                transform: rotate(0deg);
-        }
-        100%{
-                transform: rotate(360deg);
-        }
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .loginPageBox form,
-.signupPageBox form{
-        position: absolute;
-        inset: 4px;
-        background: #222;
-        padding: 50px 40px;
-        border-radius: 8px;
+.signupPageBox form {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
 }
 
 .loginPageBox form h2,
-.signupPageBox form h2{
-        color: #fff;
-        font-weight: 500;
-        text-align: center;
-        letter-spacing: 0.1em;
+.signupPageBox form h2 {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
 .loginPageBox form .loginInput,
 .signupPageBox form .signupInput{
-        position: relative;
-        width: 300px;
-        margin-top: 35px;
-       
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
 }
 
+
+
 .loginPageBox form .loginInput input,
-.signupPageBox form .signupInput input{
-        position: relative;
-        width: 100%;
-        padding: 20px 10px 10px;
-        background: transparent;
-        outline: none;
-        border: none;
-        box-shadow: none;
-        color: #23242a;
-        font-size: 1em;
-        letter-spacing: 0.05em;
-        transition: 0.5s;
-        z-index: 10;
+.signupPageBox form .signupInput input,
+.signupPageBox form .signupInput select
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
 }
 
 .loginPageBox form .loginInput span,
-.signupPageBox form .signupInput span{
-        position: absolute;
-       left: 0;
-        padding: 20px 0px 10px;
-        pointer-events: none;
-        color: #8f8f8f;
-        font-size: 1em;
-        letter-spacing: 0.05em;
-        transition: 0.5s;
+.signupPageBox form .signupInput span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }
 
 .loginPageBox form .loginInput input:valid ~ span,
 .loginPageBox form .loginInput input:focus ~ span,
 .signupPageBox form .signupInput input:valid ~ span,
-.signupPageBox form .signupInput input:focus ~ span{
-        color: #fff;
-        font-size: 0.8em;
-        transform: translateY(-34px);
+.signupPageBox form .signupInput input:focus ~ span,
+.signupPageBox form .signupInput select:valid ~ span,
+.signupPageBox form .signupInput select:focus ~ span
+{
+    color: #fff;
+    font-size: 0.8em;
+    transform: translateY(-34px);
 }
 
 .loginPageBox form .loginInput i,
-.signupPageBox form .signupInput i{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background: #fff;
-      border-radius: 4px;
-      overflow: hidden;
-      transition: 0.5s;
-      pointer-events: none;
+.signupPageBox form .signupInput i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
 }
 
 .loginPageBox form .loginInput input:valid ~ i,
 .loginPageBox form .loginInput input:focus ~ i,
 .signupPageBox form .signupInput input:valid ~ i,
-.signupPageBox form .signupInput input:focus ~ i{
-        height: 44px;
+.signupPageBox form .signupInput input:focus ~ i ,
+.signupPageBox form .signupInput select:valid ~ i,
+.signupPageBox form .signupInput select:focus ~ i{
+    height: 44px;
 }
 
 .loginLinks,
-.signupLinks{
-        display: flex;
-        justify-content: space-between;
+.signupLinks {
+    display: flex;
+    justify-content: space-between;
 }
 
 .loginLinks a,
-.signupLinks a{
-        margin: 10px 0;
-        font-size: 0.8em;
-        color: #8f8f8f;
-        text-decoration: none;
+.signupLinks a {
+    margin: 10px 0;
+    font-size: 0.8em;
+    color: #8f8f8f;
+    text-decoration: none;
 }
 
 .loginPageBox form .loginLinks a:hover,
 .loginPageBox form .loginLinks a:nth-child(2),
 .signupPageBox form .signupLinks a:hover,
-.signupPageBox form .signupLinks a:nth-child(2){
-        color: #fff;
+.signupPageBox form .signupLinks a:nth-child(2) {
+    color: #fff;
 }
 
 .loginPageBox form input[type="submit"],
-.signupPageBox form input[type="submit"]{
-        border: none;
-        outline: none;
-        padding: 9px 25px;
-        background: #fff;
-        cursor: pointer;
-        font-size: 0.9em;
-        border-radius: 4px;
-        font-weight: 600;
-        width: 100%;
+.signupPageBox form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100%;
 }
 
 .loginPageBox form input[type="submit"]:active,
-.signupPageBox form input[type="submit"]:active{
-        opacity: 0.8;
+.signupPageBox form input[type="submit"]:active {
+    opacity: 0.8;
 }
