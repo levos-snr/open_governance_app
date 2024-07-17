@@ -1,154 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Governance</title>
-   <link href="./main.css" rel="stylesheet">
-</head>
-<body>
-    <header class="">
-    </header>
-    
-    <div class="signup" id="signup">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Open Governance</title>
+        <link href="./main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class=""></header>
+        <div class="signup" id="signup">
             <div class="signupPageBox">
-                    <span class="signupborderLine"></span>
-                   <form>
-                           <h2>Sign Up</h2>
-                           <div class="signupInput">
-                                   <input type="email" name="email" id="email" required="required">
-                                   <span>Email</span>
-                                   <i></i>
-                           </div>
-                           <div class="signupInput">
-                                   <input type="text" name="username" id="username" required="required">
-                                   <span>Username</span>
-                                   <i></i>
-                           </div>
-                           <div class="signupInput">
-                                   <input type="tel" name="tel" id="tel" required="required">
-                                   <span>Phone No</span>
-                                   <i></i>
-                           </div>
-                           <div class="signupInput">
-                                   <input type="password" name="password" id="password" required="required">
-                                   <span>Password</span>
-                                   <i></i>
-                                   
-                           </div>
-                           <div class="signupInput">
-                                   <input type="password" name="confirmpassword" id="confirmpassword" required="required">
-                                   <span>Confirm Password</span>
-                                   <i></i>
-                                   
-                           </div>
-                           <div class="signupLinks">
-                                        <a href="#">Alread have account</a>
-                                        <a href="#">Login</a>
-                           </div>
-                           <input type="submit" value="SignUp">     
-                   </form>
-                    
+                <span class="signupborderLine"></span>
+                <form>
+                    <h2>Sign Up</h2>
+                    <div class="signupInput">
+                        <input type="email" name="email" id="email" required="required" />
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="signupInput">
+                        <input type="text" name="username" id="username" required="required" />
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div class="signupInput">
+                        <input type="tel" name="tel" id="tel" required="required" />
+                        <span>Phone No</span>
+                        <i></i>
+                    </div>
+                     <div class="signupInput">
+                    <select name="county" id="county-select" required="required">
+                        <option value="county">Select Country</option>
+                     </select>  
+                     <i></i>
+                     </div> 
+                    <div class="signupInput">
+                        <input type="password" name="password" id="password" required="required" />
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="signupInput">
+                        <input type="password" name="confirmpassword" id="confirmpassword" required="required" />
+                        <span>Confirm Password</span>
+                        <i></i>
+                    </div>
+                    <div class="signupLinks">
+                        <a href="#">Alread have account</a>
+                        <a href="#" id="logInId">Login</a>
+                    </div>
+                    <input type="submit"id="createSignUp" value="SignUp" />
+                </form>
             </div>
-            
-    </div>
-    <div class="login" id="login">
+        </div>
+        <div class="login" id="login">
             <div class="loginPageBox">
-                    <span class="borderLine"></span>
-                   <form>
-                           <h2>Sign in</h2>
-                           <div class="loginInput">
-                                   <input type="text" name="username" id="username" required="required">
-                                   <span>Username</span>
-                                   <i></i>
-                           </div>
-                           <div class="loginInput">
-                                   <input type="password" name="password" id="password" required="required">
-                                   <span>Password</span>
-                                   <i></i>
-                           </div>
-                           <div class="loginLinks">
-                                        <a href="#">Forgot password?</a>
-                                        <a href="#">Sign up</a>
-                           </div>
-                           <input type="submit" value="Login">     
-                   </form>
-                    
+                <span class="borderLine"></span>
+                <form>
+                    <h2>Sign in</h2>
+                    <div class="loginInput">
+                        <input type="email" name="email" id="loginemail" required="required" />
+                        <span>Email</span>
+                        <i></i>
+                    </div>
+                    <div class="loginInput">
+                        <input type="password" name="password" id="loginpassword" required="required" />
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="loginLinks">
+                        <a href="#">Forgot password?</a>
+                        <a href="#" id="signUpId">Sign up</a>
+                    </div>
+                    <input type="submit" value="Login"  id="loginUser"/>
+                </form>
             </div>
-            
-    </div>
-    <div class="container">
+        </div>
+        <div class="container" id="dashboard">
             <div class="nav">
-                    <ul>
-                            <li>
-                                    <span class="icon">
-                                            <img src="./public/images/opengovernance.png" alt="Open Governance">
-                                    </span>
-                                    <span class="title">
-                                            <h2>Open Governance</h2>
-                                    </span>
-                            </li>
-                            <li>
-                                    <span class="icon">
-                                            <i class="fa-solid fa-house"></i>
-                                    </span>
-                                    <span class="title">
-                                            Dashboard
-                                    </span>
-                            </li>
-                                <li>
-                                        <span class="icon">
-                                                <i class="fa-solid fa-briefcase"></i>
-                                        </span>
-                                        <span class="title">
-                                                Projects
-                                        </span>
-                            <li>
-                                    
-                                    <span class="icon">
-                                    <i class="fa-solid fa-message"></i>
-                                    </span>
-                                    <span class="title">
-                                                Messages
-                                    </span>
-                            </li>
-                            <li>
-                                    <span class="icon">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                    </span>
-                                    <span class="title">
-                                            Help
-                                    </span>
-                            </li>
-                                <li>
-                                        <span class="icon">
-                                        <i class="fa-solid fa-gear"></i>
-                                        </span>
-                                        <span class="title">
-                                                Settings
-                                        </span>
-                                </li>
-                                <li>
-                                        <span class="icon">
-                                                <i class="fa-solid fa-user"></i>
-                                        </span>
-                                        <span class="title">
-                                                Profile
-                                        </span>
-                                <li>
-                                        <span class="icon">
-                                                <i class="fa-solid fa-right-from-bracket"></i>
-                                        </span>
-                                        <span class="title">
-                                                Logout
-                                        </span>
-                                </li>
-                    </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <img src="./public/images/opengovernance.png" alt="Open Governance" />
+                            </span>
+                            <span class="title">
+                                <h2>Open Governance</h2>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="title">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                            <span class="title">
+                                Projects
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-message"></i>
+                            </span>
+                            <span class="title">
+                                Messages
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </span>
+                            <span class="title">
+                                Help
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </span>
+                            <span class="title">
+                                Settings
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                            <span class="title">
+                                Logout
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-    </div>
-    
-   
-    <script src="./app.js"></script>
-    <script src="https://kit.fontawesome.com/1ebc760c0c.js" crossorigin="anonymous"></script>
-</body>
+            <div class="main">
+                <div class="topbar">
+                    <div class="toggle"></div>
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search here" />
+                            <i class="fa-brands fa-searchengin"></i>
+                        </label>
+                    </div>
+                    <div class="user">
+                        <img src="./public/images/user.png" alt="User" />
+                    </div>
+                </div>
+                <div class="cardBox">
+                    <div class="card " id="card1">
+                        <div>
+                            <div class="numbers budgetN">0.00</div>
+                            <div class="cardName budgetT">Total Budget</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="card" id="card2">
+                        <div>
+                            <div class="numbers cardEx">0.00</div>
+                            <div class="cardName">Expenditure</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="card" id="card3">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Projects</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="card" id="card4">
+                        <div>
+                            <div class="numbers">1,042</div>
+                            <div class="cardName">Projects</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Recent Projects</h2>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Price</td>
+                                    <td>Payment</td>
+                                    <td>Status</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>$99</td>
+                                    <td>Paid</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jane D</td>
+                                    <td>$199</td>
+                                    <td>Due</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ken</td>
+                                    <td>$991</td>
+                                    <td>Paid</td>
+                                    <td><span class="status cancelled">Cancelled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Lewis</td>
+                                    <td>$90</td>
+                                    <td>Due</td>
+                                    <td><span class="status inprogress">In Progress</span></td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>$99</td>
+                                    <td>Paid</td>
+                                    <td><span class="status delivered">Delivered</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jane D</td>
+                                    <td>$199</td>
+                                    <td>Due</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ken</td>
+                                    <td>$991</td>
+                                    <td>Paid</td>
+                                    <td><span class="status cancelled">Cancelled</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Lewis</td>
+                                    <td>$90</td>
+                                    <td>Due</td>
+                                    <td><span class="status inprogress">In Progress</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2>Recent Customers</h2>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
+                                    </td>
+                                    <td>
+                                        <h4>John Doe</h4>
+                                        <span>Mombasa</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
+                                    </td>
+                                    <td>
+                                        <h4>John Doe</h4>
+                                        <span>Mombasa</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
+                                    </td>
+                                    <td>
+                                        <h4>John Doe</h4>
+                                        <span>Mombasa</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
+                                    </td>
+                                    <td>
+                                        <h4>John Doe</h4>
+                                        <span>Mombasa</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="60px">
+                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
+                                    </td>
+                                    <td>
+                                        <h4>John Doe</h4>
+                                        <span>Mombasa</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+        <script src="https://kit.fontawesome.com/1ebc760c0c.js" crossorigin="anonymous"></script>
+    </body>
 </html>
