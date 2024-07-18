@@ -145,10 +145,77 @@ document.addEventListener('DOMContentLoaded', function () {
                                                 const modalName = document.getElementById('modalName');
                                                 const modalLocation = document.getElementById('modalLocation');
                                                 const modalNo = document.getElementById('modalNo');
+                                                const userSetingid = document.getElementById('userSetingid');
+                                                const usernameSetingid = document.getElementById('usernameSetingid');
+                                                const useremailSetingid = document.getElementById('useremailSetingid');
+                                                const userlocationSetingid = document.getElementById('userlocationSetingid');
+                                                const openSetingPopBtn = document.getElementById('openSetingPop');
+                                                
                                                 
                                                 modalName.textContent = user.username;
                                                 modalLocation.textContent = user.location;
                                                 modalNo.textContent = user.phone;
+                                                userSetingid.src = user.image;
+                                                usernameSetingid.textContent = user.username;
+                                                useremailSetingid.textContent = user.email;
+                                                userlocationSetingid.textContent = user.location;
+                                                const setclosing = document.getElementById('setclosing');
+                                                const settingForm = document.getElementById('settingForm');
+                                                
+                                                
+                                                
+                                                openSetingPopBtn.addEventListener('click', function () {
+                                                        document.getElementById("myFormPop").style.display = "block";
+                                                        document.querySelector('.tabcontent5').style.background = 'rgba(0, 0, 0, 0.8)';
+                                                       document.querySelector('.tabcontent5').style.height = '90vh'; 
+                                                       
+                                                     
+                                                       
+                                                       //display user details on fom imputs to be patch/updated
+                                                        settingForm.usernameset.value = user.username;
+                                                        settingForm.setemail.value = user.email;
+                                                        settingForm.setlocation.value = user.location;
+                                                        settingForm.setimg.value = user.image;
+                                                        settingForm.psw.value = user.password;
+                                                        
+                                                        // use patch to update above detail on settingForm submit use below updateUser(id, data) function
+                                                        settingForm.addEventListener('submit', function (e) {
+                                                                e.preventDefault();
+
+                                                                const data = {
+                                                                        username: settingForm.usernameset.value,
+                                                                        email: settingForm.setemail.value,
+                                                                        location: settingForm.setlocation.value,
+                                                                        image: settingForm.setimg.value,
+                                                                        password: settingForm.psw.value
+
+                                                                }
+
+                                                                updateUser(user.id, data).then(user => {
+                                                                        console.log(user);
+                                                                        modalName.textContent = user.username;
+                                                                        modalLocation.textContent = user.location;
+                                                                        modalNo.textContent = user.phone;
+                                                                        userSetingid.src = user.image;
+                                                                        usernameSetingid.textContent = user.username;
+                                                                        useremailSetingid.textContent = user.email;
+                                                                        userlocationSetingid.textContent = user.location;
+                                                                        document.getElementById("myFormPop").style.display = "none";
+                                                                        document.querySelector('.tabcontent5').style.background = '';
+                                                                        document.querySelector('.tabcontent5').style.height = '';
+                                                                })
+                                                                        .catch(error => {
+                                                                                alert('Error updating user')
+                                                                        });
+                                                        });
+                                                });
+                                                
+                                                setclosing.addEventListener('click', function () {
+                                                        document.getElementById("myFormPop").style.display = "none";
+                                                        document.querySelector('.tabcontent5').style.background = '';
+                                                       document.querySelector('.tabcontent5').style.height = '';
+                                                } )
+                                                
                                         }
                                         
                                        
@@ -189,6 +256,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         /* METHODS: GET, POST, PATCH, DELETE */
+        
+        //update user using patch method and user id
+        async function updateUser(id, data) {
+                const response = await fetch(`${usersURL}/${id}`, {
+                        method: 'PATCH',
+                        headers: {
+                                'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                        alert('User updated successfully');
+                        return response.json();
+                } else {
+                        throw new Error('Failed to update user');
+                }
+        }
+                        
         
         //sigin and post method creating a user
         async function createUser(data) {
@@ -535,6 +621,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
 const select2 = document.getElementById('issueddd');
+const select3 = document.getElementById('setlocation');
 
     //render all counties in the select dropdown
     async function renderCounties() {
@@ -542,12 +629,16 @@ const select2 = document.getElementById('issueddd');
                         counties.forEach(county => {
                                 const option = document.createElement('option');
                                 const option2 = document.createElement('option');
+                                const option3 = document.createElement('option');
                                 option.value = county.name;
                                 option2.value = county.name;
+                                option3.value = county.name;
                                 option.textContent = county.name;
                                 option2.textContent = county.name;
+                                option3.textContent = county.name;
                                 select.appendChild(option);
                                 select2.appendChild(option2);
+                                select3.appendChild(option3);
                         });
                 }
 
