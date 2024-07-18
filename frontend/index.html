@@ -48,7 +48,7 @@
                         <a href="#">Alread have account</a>
                         <a href="#" id="logInId">Login</a>
                     </div>
-                    <input type="submit"id="createSignUp" value="SignUp" />
+                    <input type="submit" id="createSignUp" value="SignUp" />
                 </form>
             </div>
         </div>
@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a  id="tab1">
                             <span class="icon">
                                 <i class="fa-solid fa-house"></i>
                             </span>
@@ -99,17 +99,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a  id="tab2">
                             <span class="icon">
-                                <i class="fa-solid fa-briefcase"></i>
+                                <i class="fa-solid fa-flag"></i>
                             </span>
                             <span class="title">
-                                Projects
+                                Reports
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="tab3">
                             <span class="icon">
                                 <i class="fa-solid fa-message"></i>
                             </span>
@@ -119,7 +119,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a  id="tab4">
                             <span class="icon">
                                 <i class="fa-solid fa-circle-info"></i>
                             </span>
@@ -129,17 +129,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="tab5" >
                             <span class="icon">
                                 <i class="fa-solid fa-gear"></i>
                             </span>
                             <span class="title">
-                                Settings
+                                Profile
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="logoutId">
                             <span class="icon">
                                 <i class="fa-solid fa-right-from-bracket"></i>
                             </span>
@@ -150,7 +150,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="main">
+            
+            
+         <div class="main">
                 <div class="topbar">
                     <div class="toggle"></div>
                     <div class="search">
@@ -159,10 +161,28 @@
                             <i class="fa-brands fa-searchengin"></i>
                         </label>
                     </div>
-                    <div class="user">
-                        <img src="./public/images/user.png" alt="User" />
+                    <div class="user" id="loginUser" style="position: relative;">
+                        <img src="./public/images/user.png" id="loginUserImg" alt="User" />
+                        
+                        <!-- The Modal -->
+                        <div id="userModal" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Modal content goes here.</p>
+                            <di>
+                                    <h3>Username: <span id="modalName">Lewis Odero</span></h3>
+                                    <h3>County: <span id="modalLocation">Nairobi</span></h3>
+                                    <h3>Phone: <span id="modalNo">0706510628</span></h3>
+                                    <i class="fa-solid fa-user-pen"></i>
+                            </di>
+                          </div>
+                         
+                        </div>
+                        
                     </div>
                 </div>
+                <div class="tabcontent1">
                 <div class="cardBox">
                     <div class="card " id="card1">
                         <div>
@@ -200,8 +220,18 @@
                             <i class="fa-solid fa-briefcase"></i>
                         </div>
                     </div>
-                </div>
-                <div class="details">
+                 </div>
+                
+                 <!--Add graph -->
+                 <div class="grapParentBox">
+                 <div class="box1">
+                       
+                 </div>
+                 <div class="box2">
+                         <canvas id="myChart"></canvas>
+                 </div>
+                 </div>
+                 <div class="details">
                     <div class="recentOrders">
                         <div class="cardHeader">
                             <h2>Recent Projects</h2>
@@ -211,125 +241,323 @@
                             <thead>
                                 <tr>
                                     <td>Name</td>
-                                    <td>Price</td>
-                                    <td>Payment</td>
+                                    <td>Budget</td>
+                                    <td>County</td>
                                     <td>Status</td>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>$99</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Jane D</td>
-                                    <td>$199</td>
-                                    <td>Due</td>
-                                    <td><span class="status pending">Pending</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Ken</td>
-                                    <td>$991</td>
-                                    <td>Paid</td>
-                                    <td><span class="status cancelled">Cancelled</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Lewis</td>
-                                    <td>$90</td>
-                                    <td>Due</td>
-                                    <td><span class="status inprogress">In Progress</span></td>
-                                </tr>
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>$99</td>
-                                    <td>Paid</td>
-                                    <td><span class="status delivered">Delivered</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Jane D</td>
-                                    <td>$199</td>
-                                    <td>Due</td>
-                                    <td><span class="status pending">Pending</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Ken</td>
-                                    <td>$991</td>
-                                    <td>Paid</td>
-                                    <td><span class="status cancelled">Cancelled</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Lewis</td>
-                                    <td>$90</td>
-                                    <td>Due</td>
-                                    <td><span class="status inprogress">In Progress</span></td>
-                                </tr>
+                            <tbody id="projectId">
+                               <!--Dynamic projects --> 
                             </tbody>
                         </table>
                     </div>
                     <div class="recentCustomers">
                         <div class="cardHeader">
-                            <h2>Recent Customers</h2>
+                            <h2>Governace</h2>
+                            <a href="#" class="btn">View All</a>
                         </div>
                         <table>
-                            <tbody>
-                                <tr>
-                                    <td width="60px">
-                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
-                                    </td>
-                                    <td>
-                                        <h4>John Doe</h4>
-                                        <span>Mombasa</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td width="60px">
-                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
-                                    </td>
-                                    <td>
-                                        <h4>John Doe</h4>
-                                        <span>Mombasa</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td width="60px">
-                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
-                                    </td>
-                                    <td>
-                                        <h4>John Doe</h4>
-                                        <span>Mombasa</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td width="60px">
-                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
-                                    </td>
-                                    <td>
-                                        <h4>John Doe</h4>
-                                        <span>Mombasa</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td width="60px">
-                                        <div class="imgBx"><img src="./public/images/user.png" alt="user" /></div>
-                                    </td>
-                                    <td>
-                                        <h4>John Doe</h4>
-                                        <span>Mombasa</span>
-                                    </td>
-                                </tr>
+                            <tbody id="govertb">
+                               
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </div>
+                 </div>
+                 </div>
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 <div  class="tabcontent2" style="display:none"  >
+                         <div class="issueTop">
+                                 <div><h2>Issues</h2></div>
+                                 <div id="reportIddd" style="display: block;"><button id="reportIssue">Report</button></div>
+                                 
+                                 <div class="form" id="formPrentId">
+                                         <form>
+                                                 
+                                             <h2>Report Issue</h2>
+                                             
+                                              <div class="issueInput">
+                                                      <div class="issueInput">
+                                                          <input type="text" name="issueName" id="issueNameId" />
+                                                          <span>Description</span>
+                                                          <i></i>
+                                                      </div>
+                                             </div>
+                                             <div class="issueInput">
+                                                 <input type="text" name="issueType" id="issueTypeId" />
+                                                 <span>Type</span>
+                                                 <i></i>
+                                             </div>
+                                             <div class="issueInput">
+                                             <select id="issueddd" >
+                                                    
+                                                        <option >Location</option>
+                                             </select>
+                                             </div>
+                                             <div class="issueInput">
+                                                 <input type="text" name="issueStatus" id="issueStatusId" />
+                                                 <span>Status</span>
+                                                 <i></i>
+                                             </div>
+                                             
+                                           
+                                             <input type="submit" value="Submit Issue"  id="issueSubmitId"/>
+                                              
+                                         </form>
+                                              
+                                 
+                                 </div>
+                         
+                         </div>
+                        
+                     
+                      <table>
+                              <thead>
+                                  <tr>
+                                      <td>Issue</td>
+                                      <td>Type</td>
+                                      <td>Location</td>
+                                      <td>Status</td>
+                                  </tr>
+                              </thead>
+                              
+                              <tbody id="issuesId">
+                                 <!--Dynamic projects --> 
+                              </tbody>
+                              
+                      </table>
+                     
+                   </div>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   <div class="tabcontent3" style="display:none">
+                       <h2>Zoom in</h2>
+                       <p>Tokyo is the capital of Japan.</p>
+                       <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                     </div>
+                     <div  class="tabcontent4" style="display:none">
+                         <h2>Zoom in</h2>
+                         <p>Tokyo is the capital of Japan.</p>
+                         <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                       </div>
+                       
+                       <div  class="tabcontent5" style="display:none">
+                               <div class="userSettingContainer p-0">
+                                   <h1 class="userSettingH3 mb-3">Settings</h1>
+                                   <div class="userSettingRow">
+                                       <div class="userSettingCol-md-5 userSettingCol-xl-4">
+                                           <div class="userSettingCard">
+                                               <div class="userSettingCard-header">
+                                                   <h5 class="userSettingCard-title mb-0">Profile Settings</h5>
+                                               </div>
+                                               <div class="userSettingList-group userSettingList-group-flush" role="tablist">
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action active" data-toggle="list" href="#userSettingAccount" role="tab">
+                                                       Account
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#userSettingPassword" role="tab">
+                                                       Password
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Privacy and safety
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Email notifications
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Web notifications
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Widgets
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Your data
+                                                   </a>
+                                                   <a class="userSettingList-group-item userSettingList-group-item-action" data-toggle="list" href="#" role="tab">
+                                                       Delete account
+                                                   </a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="userSettingCol-md-7 userSettingCol-xl-8">
+                                           <div class="userSettingTab-content">
+                                               <div class="userSettingTab-pane fade show active" id="userSettingAccount" role="tabpanel">
+                                                   <div class="userSettingCard">
+                                                       <div class="userSettingCard-header">
+                                                           <div class="userSettingCard-actions float-right">
+                                                               <div class="userSettingDropdown show">
+                                                                   <a href="#" data-toggle="dropdown" data-display="static">
+                                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle">
+                                                                           <circle cx="12" cy="12" r="1"></circle>
+                                                                           <circle cx="19" cy="12" r="1"></circle>
+                                                                           <circle cx="5" cy="12" r="1"></circle>
+                                                                       </svg>
+                                                                   </a>
+                                                                   <div class="userSettingDropdown-menu userSettingDropdown-menu-right">
+                                                                       <a class="userSettingDropdown-item" href="#">Action</a>
+                                                                       <a class="userSettingDropdown-item" href="#">Another action</a>
+                                                                       <a class="userSettingDropdown-item" href="#">Something else here</a>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                           <h5 class="userSettingCard-title mb-0">Public info</h5>
+                                                       </div>
+                                                       <div class="userSettingCard-body">
+                                                           <form>
+                                                               <div class="userSettingRow">
+                                                                   <div class="userSettingCol-md-8">
+                                                                       <div class="userSettingForm-group">
+                                                                           <label for="userSettingInputUsername">Username</label>
+                                                                           <input type="text" class="userSettingForm-control" id="userSettingInputUsername" placeholder="Username">
+                                                                       </div>
+                                                                       <div class="userSettingForm-group">
+                                                                           <label for="userSettingInputBio">Biography</label>
+                                                                           <textarea rows="2" class="userSettingForm-control" id="userSettingInputBio" placeholder="Tell something about yourself"></textarea>
+                                                                       </div>
+                                                                   </div>
+                                                                   <div class="userSettingCol-md-4">
+                                                                       <div class="userSettingText-center">
+                                                                           <img alt="Andrew Jones" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="userSettingRounded-circle userSettingImg-responsive mt-2" width="128" height="128">
+                                                                           <div class="mt-2">
+                                                                               <span class="btn btn-primary">
+                                                                                   <svg class="svg-inline--fa fa-upload fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="upload" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                                                       <path fill="currentColor" d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
+                                                                                   </svg> Upload
+                                                                               </span>
+                                                                           </div>
+                                                                           <small>For best results, use an image at least 128px by 128px in .jpg format</small>
+                                                                       </div>
+                                                                   </div>
+                                                               </div>
+                                                               <button type="submit" class="btn btn-primary">Save changes</button>
+                                                           </form>
+                                                       </div>
+                                                   </div>
+                                                   <div class="userSettingCard">
+                                                       <div class="userSettingCard-header">
+                                                           <div class="userSettingCard-actions float-right">
+                                                               <div class="userSettingDropdown show">
+                                                                   <a href="#" data-toggle="dropdown" data-display="static">
+                                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle">
+                                                                           <circle cx="12" cy="12" r="1"></circle>
+                                                                           <circle cx="19" cy="12" r="1"></circle>
+                                                                           <circle cx="5" cy="12" r="1"></circle>
+                                                                       </svg>
+                                                                   </a>
+                                                                   <div class="userSettingDropdown-menu userSettingDropdown-menu-right">
+                                                                       <a class="userSettingDropdown-item" href="#">Action</a>
+                                                                       <a class="userSettingDropdown-item" href="#">Another action</a>
+                                                                       <a class="userSettingDropdown-item" href="#">Something else here</a>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+                                                           <h5 class="userSettingCard-title mb-0">Private info</h5>
+                                                       </div>
+                                                       <div class="userSettingCard-body">
+                                                           <form>
+                                                               <div class="userSettingForm-row">
+                                                                   <div class="userSettingForm-group userSettingCol-md-6">
+                                                                       <label for="userSettingInputFirstName">First name</label>
+                                                                       <input type="text" class="userSettingForm-control" id="userSettingInputFirstName" placeholder="First name">
+                                                                   </div>
+                                                                   <div class="userSettingForm-group userSettingCol-md-6">
+                                                                       <label for="userSettingInputLastName">Last name</label>
+                                                                       <input type="text" class="userSettingForm-control" id="userSettingInputLastName" placeholder="Last name">
+                                                                   </div>
+                                                               </div>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputEmail4">Email</label>
+                                                                   <input type="email" class="userSettingForm-control" id="userSettingInputEmail4" placeholder="Email">
+                                                               </div>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputAddress">Address</label>
+                                                                   <input type="text" class="userSettingForm-control" id="userSettingInputAddress" placeholder="1234 Main St">
+                                                               </div>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputAddress2">Address 2</label>
+                                                                   <input type="text" class="userSettingForm-control" id="userSettingInputAddress2" placeholder="Apartment, studio, or floor">
+                                                               </div>
+                                                               <div class="userSettingForm-row">
+                                                                   <div class="userSettingForm-group userSettingCol-md-6">
+                                                                       <label for="userSettingInputCity">City</label>
+                                                                       <input type="text" class="userSettingForm-control" id="userSettingInputCity">
+                                                                   </div>
+                                                                   <div class="userSettingForm-group userSettingCol-md-4">
+                                                                       <label for="userSettingInputState">State</label>
+                                                                       <select id="userSettingInputState" class="userSettingForm-control">
+                                                                           <option selected="">Choose...</option>
+                                                                           <option>...</option>
+                                                                       </select>
+                                                                   </div>
+                                                                   <div class="userSettingForm-group userSettingCol-md-2">
+                                                                       <label for="userSettingInputZip">Zip</label>
+                                                                       <input type="text" class="userSettingForm-control" id="userSettingInputZip">
+                                                                   </div>
+                                                               </div>
+                                                               <button type="submit" class="btn btn-primary">Save changes</button>
+                                                           </form>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="userSettingTab-pane fade" id="userSettingPassword" role="tabpanel">
+                                                   <div class="userSettingCard">
+                                                       <div class="userSettingCard-body">
+                                                           <h5 class="userSettingCard-title">Password</h5>
+                                                           <form>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputPasswordCurrent">Current password</label>
+                                                                   <input type="password" class="userSettingForm-control" id="userSettingInputPasswordCurrent">
+                                                                   <small><a href="#">Forgot your password?</a></small>
+                                                               </div>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputPasswordNew">New password</label>
+                                                                   <input type="password" class="userSettingForm-control" id="userSettingInputPasswordNew">
+                                                               </div>
+                                                               <div class="userSettingForm-group">
+                                                                   <label for="userSettingInputPasswordNew2">Verify password</label>
+                                                                   <input type="password" class="userSettingForm-control" id="userSettingInputPasswordNew2">
+                                                               </div>
+                                                               <button type="submit" class="btn btn-primary">Save changes</button>
+                                                           </form>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                         </div>
+                </div> 
+            
+            
         </div>
         <script src="./app.js"></script>
         <script src="https://kit.fontawesome.com/1ebc760c0c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script src="./charts.js"></script>
     </body>
 </html>
