@@ -1,73 +1,63 @@
 {
-"expenditure":[
-        {
-                "id":"total",
-                "amount": 1000000000
-        },
-        {
-          "id": "Education",
-          "amount": 100100000
-        },
-        {
-          "id": "Health",
-          "amount": 20000000
-        },
-        {
-          "id": "Roads",
-          "amount": 3000000
-        },
-        {
-          "id": "Water",
-          "amount": 400000000
-        },
-        {
-          "id": "Agriculture",
-          "amount": 500000000
-        },
-        {
-          "id": "Security",
-          "amount": 6000000
-        },
-        {
-          "id": "Environment",
-          "amount": 700000000
-        },
-        {
-          "id": "Housing",
-          "amount": 8000000
-        },
-        {
-          "id": "Energy",
-          "amount": 900000000
-        },
-        {
-          "id": "Trade",
-          "amount": 1000000000
-        },
-        {
-          "id": "Tourism",
-          "amount": 1100000000
-        },
-        {
-          "id": "Industry",
-          "amount": 1200000000
-        },
-        {
-          "id": "Sports",
-          "amount": 1300000000
-        },
-        {
-          "id": "Youth",
-          "amount": 1400000000
-        }
-],
-         
-         
-  "budget": [
+  "expenditure": [
     {
-        "id":"total",
-        "amount": 10000000000
+      "id": "Education",
+      "amount": 100100000
     },
+    {
+      "id": "Health",
+      "amount": 20000000
+    },
+    {
+      "id": "Roads",
+      "amount": 3000000
+    },
+    {
+      "id": "Water",
+      "amount": 400000000
+    },
+    {
+      "id": "Agriculture",
+      "amount": 500000000
+    },
+    {
+      "id": "Security",
+      "amount": 6000000
+    },
+    {
+      "id": "Environment",
+      "amount": 700000000
+    },
+    {
+      "id": "Housing",
+      "amount": 8000000
+    },
+    {
+      "id": "Energy",
+      "amount": 900000000
+    },
+    {
+      "id": "Trade",
+      "amount": 1000000000
+    },
+    {
+      "id": "Tourism",
+      "amount": 1100000000
+    },
+    {
+      "id": "Industry",
+      "amount": 1200000000
+    },
+    {
+      "id": "Sports",
+      "amount": 1300000000
+    },
+    {
+      "id": "Youth",
+      "amount": 1400000000
+    }
+  ],
+  "budget": [
     {
       "id": "Education",
       "amount": 100000000
@@ -128,20 +118,237 @@
   "projects": [
     {
       "name": "New Hospital Construction",
-      "status": "ongoing",
       "budget": 20000000,
       "start_date": "2023-01-01",
       "end_date": "2024-12-31",
-      "county": "Mombasa"
-      
+      "county": "Mombasa",
+      "status": "inprogress",
+      "id": "8597"
     },
     {
       "name": "Road Improvement",
-      "status": "completed",
       "budget": 10000000,
       "start_date": "2022-05-01",
       "end_date": "2023-03-31",
-      "county": "Kwale"
+      "county": "Kwale",
+      "status": "completed",
+      "id": "f10b"
+    },
+    {
+      "name": "Water Supply Project",
+      "budget": 5000000,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Kilifi",
+      "status": "pending",
+      "id": "53cd"
+    },
+    {
+      "name": "New School Construction",
+      "budget": 3000000,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "Taita Taveta",
+      "status": "completed",
+      "id": "a0c8"
+    },
+    {
+      "name": "New Police Station Construction",
+      "budget": 4000000,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Lamu",
+      "status": "cancelled",
+      "id": "10f2"
+    },
+    {
+      "name": "New Market Construction",
+      "budget": 2000000,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Tana River",
+      "status": "completed",
+      "id": "a659"
+    },
+    {
+      "name": "New Housing Project",
+      "budget": 1000000,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Garissa",
+      "status": "pending",
+      "id": "990c"
+    },
+    {
+      "name": "New Energy Project",
+      "budget": 500000,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "Wajir",
+      "status": "completed",
+      "id": "8397"
+    },
+    {
+      "name": "New Trade Project",
+      "budget": 300000,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Mandera",
+      "status": "inprogress",
+      "id": "36bb"
+    },
+    {
+      "name": "New Tourism Project",
+      "budget": 400000,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Marsabit",
+      "status": "completed",
+      "id": "0dd3"
+    },
+    {
+      "name": "New Industry Project",
+      "budget": 200000,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Isiolo",
+      "status": "inprogress",
+      "id": "69ce"
+    },
+    {
+      "name": "New Sports Project",
+      "budget": 100000,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "Meru",
+      "status": "completed",
+      "id": "008a"
+    },
+    {
+      "name": "New Youth Project",
+      "budget": 50000,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Tharaka Nithi",
+      "status": "pending",
+      "id": "4181"
+    },
+    {
+      "name": "New Environment Project",
+      "budget": 30000,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Embu",
+      "status": "completed",
+      "id": "0256"
+    },
+    {
+      "name": "New Security Project",
+      "budget": 20000,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Kitui",
+      "status": "inprogress",
+      "id": "cc1c"
+    },
+    {
+      "name": "New Agriculture Project",
+      "budget": 10000,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "Machakos",
+      "status": "completed",
+      "id": "64a5"
+    },
+    {
+      "name": "New Health Project",
+      "budget": 5000,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Makueni",
+      "status": "inprogress",
+      "id": "2d2c"
+    },
+    {
+      "name": "New Education Project",
+      "budget": 3000,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Nyandarua",
+      "status": "cancelled",
+      "id": "349d"
+    },
+    {
+      "name": "New Water Project",
+      "budget": 2000,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Nyeri",
+      "status": "inprogress",
+      "id": "0c78"
+    },
+    {
+      "name": "New Road Project",
+      "budget": 1000,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "Kirinyaga",
+      "status": "completed",
+      "id": "344f"
+    },
+    {
+      "name": "New Hospital Project",
+      "budget": 500,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Murang'a",
+      "status": "cancelled",
+      "id": "1d82"
+    },
+    {
+      "name": "New Road Project",
+      "budget": 300,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Kiambu",
+      "status": "completed",
+      "id": "1255"
+    },
+    {
+      "name": "New Water Project",
+      "budget": 200,
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "county": "Turkana",
+      "status": "pending",
+      "id": "2071"
+    },
+    {
+      "name": "New School Project",
+      "budget": 100,
+      "start_date": "2022-11-01",
+      "end_date": "2023-10-31",
+      "county": "West Pokot",
+      "status": "completed",
+      "id": "2732"
+    },
+    {
+      "name": "New Health Project",
+      "budget": 50,
+      "start_date": "2023-01-01",
+      "end_date": "2024-12-31",
+      "county": "Samburu",
+      "status": "inprogress",
+      "id": "5877"
+    },
+    {
+      "name": "New Education Project",
+      "budget": 30,
+      "start_date": "2022-05-01",
+      "end_date": "2023-03-31",
+      "county": "Embu",
+      "status": "completed",
+      "id": "3b04"
     }
   ],
   "public_services": [
@@ -165,7 +372,7 @@
   ],
   "citizen_complaints": [
     {
-      "id": 1,
+      "id": "1",
       "issue": "The road is too narrow",
       "location": "Mombasa",
       "status": "pending",
@@ -174,35 +381,108 @@
       "type": "red-flag",
       "images": "image1.jpg",
       "videos": "video1.mp4"
+    },
+    {
+      "id": "2",
+      "issue": "The road is too bumpy",
+      "location": "Kwale",
+      "status": "resolved",
+      "createdOn": "2019-09-01",
+      "createdBy": "user",
+      "type": "red-flag",
+      "images": "image2.jpg",
+      "videos": "video2.mp4"
+    },
+    {
+      "id": "3",
+      "issue": "The road is too dusty",
+      "location": "Kilifi",
+      "status": "under investigation",
+      "createdOn": "2019-09-01",
+      "createdBy": "user",
+      "type": "red-flag",
+      "images": "image3.jpg",
+      "videos": "video3.mp4"
+    },
+    {
+      "id": "4",
+      "issue": "The road is too narrow",
+      "location": "Mombasa",
+      "status": "pending",
+      "createdOn": "2019-09-01",
+      "createdBy": "user",
+      "type": "red-flag",
+      "images": "image1.jpg",
+      "videos": "video1.mp4"
+    },
+    {
+      "id": "ca9f",
+      "issue": "Gate broken",
+      "type": "agent",
+      "location": "0",
+      "status": "pending"
+    },
+    {
+      "id": "4148",
+      "issue": "Road",
+      "type": "Pending",
+      "location": "28a7",
+      "status": "pending"
+    },
+    {
+      "id": "87b5",
+      "issue": "Gate broken",
+      "type": "agent",
+      "location": "10f3",
+      "status": "pending"
+    },
+    {
+      "id": "3173",
+      "issue": "Gate broken",
+      "type": "agent",
+      "location": "Makueni",
+      "status": "pending"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin1",
       "email": "admin1@gmail.com",
       "phone": "0712345678",
       "password": "admin1",
       "role": "admin",
-      "location": "Mombasa"
+      "location": "Mombasa",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user1",
       "email": "user1@gmail.com",
       "phone": "0712345674",
       "password": "user1",
       "role": "user",
-      "location": "Kwale"
+      "location": "Kwale",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "user2",
       "phone": "0712345675",
       "email": "user2@gmail.com",
       "password": "user2",
       "role": "user",
       "location": "Kilifi"
+    },
+    {
+      "id": "4809",
+      "username": "levos_snr",
+      "email": "lewisodero27@gmail.com",
+      "phone": "0706510628",
+      "password": "1234",
+      "role": "user",
+      "location": "Nairobi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
     }
   ],
   "elected_officials": [
@@ -246,7 +526,8 @@
       "governor": "Ali Hassan Joho",
       "senator": "Mohammed Faki",
       "womenRep": "Mishi Mboko",
-      "postalAbb": "MSA"
+      "postalAbb": "MSA",
+      "id": "82a1"
     },
     {
       "name": "Kwale",
@@ -256,7 +537,8 @@
       "governor": "Salim Mvurya",
       "senator": "Issa Juma",
       "womenRep": "Zuleikha Juma",
-      "postalAbb": "KLE"
+      "postalAbb": "KLE",
+      "id": "bbee"
     },
     {
       "name": "Kilifi",
@@ -266,7 +548,8 @@
       "governor": "Amason Kingi",
       "senator": "Stewart Madzayo",
       "womenRep": "Gertrude Mbeyu",
-      "postalAbb": "KLF"
+      "postalAbb": "KLF",
+      "id": "ca87"
     },
     {
       "name": "Tana River",
@@ -276,7 +559,8 @@
       "governor": "Dhadho Godhana",
       "senator": "Juma Wario",
       "womenRep": "Rehema Hassan",
-      "postalAbb": "TRV"
+      "postalAbb": "TRV",
+      "id": "2a45"
     },
     {
       "name": "Lamu",
@@ -286,7 +570,8 @@
       "governor": "Fahim Twaha",
       "senator": "Anwar Loitiptip",
       "womenRep": "Ruweida Obbo",
-      "postalAbb": "LMU"
+      "postalAbb": "LMU",
+      "id": "1f6c"
     },
     {
       "name": "Taita-Taveta",
@@ -296,7 +581,8 @@
       "governor": "Granton Samboja",
       "senator": "Jones Mwaruma",
       "womenRep": "Lydia Haika",
-      "postalAbb": "TTA"
+      "postalAbb": "TTA",
+      "id": "58bd"
     },
     {
       "name": "Garissa",
@@ -306,7 +592,8 @@
       "governor": "Ali Korane",
       "senator": "Yusuf Haji",
       "womenRep": "Anab Subow",
-      "postalAbb": "GSA"
+      "postalAbb": "GSA",
+      "id": "f72a"
     },
     {
       "name": "Wajir",
@@ -316,7 +603,8 @@
       "governor": "Mohamed Abdi",
       "senator": "Abdirahman Ali",
       "womenRep": "Fatuma Gedi",
-      "postalAbb": "WJR"
+      "postalAbb": "WJR",
+      "id": "722c"
     },
     {
       "name": "Mandera",
@@ -326,7 +614,8 @@
       "governor": "Ali Roba",
       "senator": "Mohamed Mahamud",
       "womenRep": "Amina Gedow",
-      "postalAbb": "MDR"
+      "postalAbb": "MDR",
+      "id": "e77b"
     },
     {
       "name": "Marsabit",
@@ -336,7 +625,8 @@
       "governor": "Mohamed Mohamud",
       "senator": "Godana Hargura",
       "womenRep": "Sofia Abdi",
-      "postalAbb": "MST"
+      "postalAbb": "MST",
+      "id": "9695"
     },
     {
       "name": "Isiolo",
@@ -346,7 +636,8 @@
       "governor": "Mohamed Kuti",
       "senator": "Fatuma Dullo",
       "womenRep": "Rehema Jaldesa",
-      "postalAbb": "ISL"
+      "postalAbb": "ISL",
+      "id": "10f3"
     },
     {
       "name": "Meru",
@@ -356,7 +647,8 @@
       "governor": "Kiraitu Murungi",
       "senator": "Mithika Linturi",
       "womenRep": "Kawira Mwangaza",
-      "postalAbb": "MRU"
+      "postalAbb": "MRU",
+      "id": "008b"
     },
     {
       "name": "Tharaka-Nithi",
@@ -366,7 +658,8 @@
       "governor": "Muthomi Njuki",
       "senator": "Kithure Kindiki",
       "womenRep": "Beatrice Nkatha",
-      "postalAbb": "TNH"
+      "postalAbb": "TNH",
+      "id": "0e75"
     },
     {
       "name": "Embu",
@@ -376,7 +669,8 @@
       "governor": "Martin Wambora",
       "senator": "Njeru Ndwiga",
       "womenRep": "Jane Wanjuki",
-      "postalAbb": "EBU"
+      "postalAbb": "EBU",
+      "id": "28a7"
     },
     {
       "name": "Kitui",
@@ -386,7 +680,8 @@
       "governor": "Charity Ngilu",
       "senator": "Enoch Wambua",
       "womenRep": "Irene Kasalu",
-      "postalAbb": "KTI"
+      "postalAbb": "KTI",
+      "id": "ce41"
     },
     {
       "name": "Machakos",
@@ -396,7 +691,8 @@
       "governor": "Alfred Mutua",
       "senator": "Boniface Kabaka",
       "womenRep": "Joyce Kamene",
-      "postalAbb": "MKS"
+      "postalAbb": "MKS",
+      "id": "7ae5"
     },
     {
       "name": "Makueni",
@@ -406,7 +702,8 @@
       "governor": "Kivutha Kibwana",
       "senator": "Mutula Kilonzo",
       "womenRep": "Rose Museo",
-      "postalAbb": "MKN"
+      "postalAbb": "MKN",
+      "id": "1e14"
     },
     {
       "name": "Nyandarua",
@@ -416,7 +713,8 @@
       "governor": "Francis Kimemia",
       "senator": "Mwangi Githiomi",
       "womenRep": "Faith Gitau",
-      "postalAbb": "NYD"
+      "postalAbb": "NYD",
+      "id": "26fb"
     },
     {
       "name": "Nyeri",
@@ -426,7 +724,8 @@
       "governor": "Mutahi Kahiga",
       "senator": "Ephraim Maina",
       "womenRep": "Rahab Mukami",
-      "postalAbb": "NYR"
+      "postalAbb": "NYR",
+      "id": "7e71"
     },
     {
       "name": "Kirinyaga",
@@ -436,7 +735,8 @@
       "governor": "Anne Waiguru",
       "senator": "Charles Kibiru",
       "womenRep": "Purity Ngirici",
-      "postalAbb": "KYG"
+      "postalAbb": "KYG",
+      "id": "60ac"
     },
     {
       "name": "Murang'a",
@@ -446,7 +746,8 @@
       "governor": "Mwangi wa Iria",
       "senator": "Irungu Kang'ata",
       "womenRep": "Sabina Chege",
-      "postalAbb": "MUR"
+      "postalAbb": "MUR",
+      "id": "b03a"
     },
     {
       "name": "Kiambu",
@@ -456,7 +757,8 @@
       "governor": "James Nyoro",
       "senator": "Kimani Wamatangi",
       "womenRep": "Gathoni wa Muchomba",
-      "postalAbb": "KBU"
+      "postalAbb": "KBU",
+      "id": "3234"
     },
     {
       "name": "Turkana",
@@ -466,7 +768,8 @@
       "governor": "Josphat Nanok",
       "senator": "Malachy Ekal",
       "womenRep": "Joyce Emanikor",
-      "postalAbb": "TRN"
+      "postalAbb": "TRN",
+      "id": "c9ce"
     },
     {
       "name": "West Pokot",
@@ -476,7 +779,8 @@
       "governor": "John Lonyangapuo",
       "senator": "Samson Cherargei",
       "womenRep": "Lilian Tomitom",
-      "postalAbb": "WPT"
+      "postalAbb": "WPT",
+      "id": "4240"
     },
     {
       "name": "Samburu",
@@ -486,7 +790,8 @@
       "governor": "Moses Lenolkulal",
       "senator": "Steve Lelegwe",
       "womenRep": "Maison Leshoomo",
-      "postalAbb": "SBR"
+      "postalAbb": "SBR",
+      "id": "c300"
     },
     {
       "name": "Trans-Nzoia",
@@ -496,7 +801,8 @@
       "governor": "Patrick Khaemba",
       "senator": "Michael Mbito",
       "womenRep": "Janet Nangabo",
-      "postalAbb": "TNZ"
+      "postalAbb": "TNZ",
+      "id": "4fc6"
     },
     {
       "name": "Uasin Gishu",
@@ -506,7 +812,8 @@
       "governor": "Jackson Mandago",
       "senator": "Margaret Kamar",
       "womenRep": "Gladys Shollei",
-      "postalAbb": "UGU"
+      "postalAbb": "UGU",
+      "id": "3755"
     },
     {
       "name": "Elgeyo-Marakwet",
@@ -516,7 +823,8 @@
       "governor": "Alex Tolgos",
       "senator": "Kipchumba Murkomen",
       "womenRep": "Jane Chebaibai",
-      "postalAbb": "EKT"
+      "postalAbb": "EKT",
+      "id": "154a"
     },
     {
       "name": "Nandi",
@@ -526,7 +834,8 @@
       "governor": "Stephen Sang",
       "senator": "Samson Cherargei",
       "womenRep": "Tecla Tum",
-      "postalAbb": "NDI"
+      "postalAbb": "NDI",
+      "id": "6551"
     },
     {
       "name": "Baringo",
@@ -536,7 +845,8 @@
       "governor": "Stanley Kiptis",
       "senator": "Gideon Moi",
       "womenRep": "Gladwell Cheruiyot",
-      "postalAbb": "BRG"
+      "postalAbb": "BRG",
+      "id": "8515"
     },
     {
       "name": "Laikipia",
@@ -546,7 +856,8 @@
       "governor": "Ndiritu Muriithi",
       "senator": "John Kinyua",
       "womenRep": "Catherine Waruguru",
-      "postalAbb": "LKP"
+      "postalAbb": "LKP",
+      "id": "3f2f"
     },
     {
       "name": "Nakuru",
@@ -556,7 +867,8 @@
       "governor": "Lee Kinyanjui",
       "senator": "Susan Kihika",
       "womenRep": "Liza Chelule",
-      "postalAbb": "NKR"
+      "postalAbb": "NKR",
+      "id": "fc66"
     },
     {
       "name": "Narok",
@@ -566,7 +878,8 @@
       "governor": "Samuel Tunai",
       "senator": "Ledama Olekina",
       "womenRep": "Soipan Tuya",
-      "postalAbb": "NRK"
+      "postalAbb": "NRK",
+      "id": "234d"
     },
     {
       "name": "Kajiado",
@@ -576,7 +889,8 @@
       "governor": "Joseph Ole Lenku",
       "senator": "Philip Mpaayei",
       "womenRep": "Janet Teyiaa",
-      "postalAbb": "KJD"
+      "postalAbb": "KJD",
+      "id": "8ea7"
     },
     {
       "name": "Kericho",
@@ -586,7 +900,8 @@
       "governor": "Paul Chepkwony",
       "senator": "Aaron Cheruiyot",
       "womenRep": "Florence Bore",
-      "postalAbb": "KRC"
+      "postalAbb": "KRC",
+      "id": "9622"
     },
     {
       "name": "Bomet",
@@ -596,7 +911,8 @@
       "governor": "Hillary Barchok",
       "senator": "Christopher Langat",
       "womenRep": "Joyce Korir",
-      "postalAbb": "BMT"
+      "postalAbb": "BMT",
+      "id": "b37f"
     },
     {
       "name": "Kakamega",
@@ -606,7 +922,8 @@
       "governor": "Wycliffe Oparanya",
       "senator": "Cleophas Malala",
       "womenRep": "Elisabeth Atieno",
-      "postalAbb": "KGM"
+      "postalAbb": "KGM",
+      "id": "f7a3"
     },
     {
       "name": "Vihiga",
@@ -616,7 +933,8 @@
       "governor": "Wilber Ottichilo",
       "senator": "George Khaniri",
       "womenRep": "Beatrice Adagala",
-      "postalAbb": "VGA"
+      "postalAbb": "VGA",
+      "id": "c51c"
     },
     {
       "name": "Bungoma",
@@ -626,7 +944,8 @@
       "governor": "Wycliffe Wangamati",
       "senator": "Moses Wetangula",
       "womenRep": "Catherine Wambilianga",
-      "postalAbb": "BGM"
+      "postalAbb": "BGM",
+      "id": "0b2c"
     },
     {
       "name": "Busia",
@@ -636,7 +955,8 @@
       "governor": "Sospeter Ojaamong",
       "senator": "Amos Wako",
       "womenRep": "Florence Mutua",
-      "postalAbb": "BSA"
+      "postalAbb": "BSA",
+      "id": "9978"
     },
     {
       "name": "Siaya",
@@ -646,7 +966,8 @@
       "governor": "Cornel Rasanga",
       "senator": "James Orengo",
       "womenRep": "Christine Ombaka",
-      "postalAbb": "SYA"
+      "postalAbb": "SYA",
+      "id": "a8bf"
     },
     {
       "name": "Kisumu",
@@ -656,7 +977,8 @@
       "governor": "Anyang Nyong'o",
       "senator": "Fred Outa",
       "womenRep": "Rosa Buyu",
-      "postalAbb": "KSM"
+      "postalAbb": "KSM",
+      "id": "ec9e"
     },
     {
       "name": "Homa Bay",
@@ -666,7 +988,8 @@
       "governor": "Cyprian Awiti",
       "senator": "Moses Kajwang",
       "womenRep": "Gladys Wanga",
-      "postalAbb": "HBY"
+      "postalAbb": "HBY",
+      "id": "c138"
     },
     {
       "name": "Migori",
@@ -676,7 +999,8 @@
       "governor": "Okoth Obado",
       "senator": "Ochillo Ayacko",
       "womenRep": "Pamela Odhiambo",
-      "postalAbb": "MGR"
+      "postalAbb": "MGR",
+      "id": "3341"
     },
     {
       "name": "Kisii",
@@ -686,7 +1010,8 @@
       "governor": "James Ongwae",
       "senator": "Sam Ongeri",
       "womenRep": "Janet Ongera",
-      "postalAbb": "KSI"
+      "postalAbb": "KSI",
+      "id": "d766"
     },
     {
       "name": "Nyamira",
@@ -696,7 +1021,8 @@
       "governor": "John Nyagarama",
       "senator": "Okong'o Omogeni",
       "womenRep": "Jerusha Momanyi",
-      "postalAbb": "NYM"
+      "postalAbb": "NYM",
+      "id": "7e6c"
     },
     {
       "name": "Nairobi",
@@ -706,7 +1032,8 @@
       "governor": "Mike Sonko",
       "senator": "Johnson Sakaja",
       "womenRep": "Esther Passaris",
-      "postalAbb": "NRB"
+      "postalAbb": "NRB",
+      "id": "bd2a"
     }
   ]
 }
