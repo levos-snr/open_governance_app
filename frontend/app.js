@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
              getUsers().then(users => {
                 users.forEach(user => {
                     if (user.id == JSON.parse(localStorage.getItem('user')).id) {
-                        loginUserImg.src = user.image || './public/images/user.png';
+                        loginUserImg.src = user.image;
                         
                         const modal = document.getElementById("userModal");
                         const span = document.getElementsByClassName("close")[0];
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         modalName.textContent = user.username;
                         modalLocation.textContent = user.location;
                         modalNo.textContent = user.phone;
-                        userSetingid.src = user.image || './public/images/user.png';
+                        userSetingid.src = user.image;
                         usernameSetingid.textContent = user.username;
                         useremailSetingid.textContent = user.email;
                         userlocationSetingid.textContent = user.location;
@@ -212,14 +212,14 @@ document.addEventListener('DOMContentLoaded', function () {
                                         modalName.textContent = user.username;
                                         modalLocation.textContent = user.location;
                                         modalNo.textContent = user.phone;
-                                        userSetingid.src = user.image || './public/images/user.png';
+                                        userSetingid.src = user.image;
                                         usernameSetingid.textContent = user.username;
                                         useremailSetingid.textContent = user.email;
                                         userlocationSetingid.textContent = user.location;
                                         document.getElementById("myFormPop").style.display = "none";
                                         document.querySelector('.tabcontent5').style.background = '';
                                         document.querySelector('.tabcontent5').style.height = '';
-                                        loginUserImg.src = user.image || './public/images/user.png';
+                                        loginUserImg.src = user.image;
 
                                     })
                                     .catch(error => {
@@ -706,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             
             divctd1.classList.add('imgBx');
-            imgcdiv.src = county.governorPhoto || 'https://via.placeholder.com/150';
+            imgcdiv.src = county.governorPhoto || './public/images/user.png';
             h4ctd2.textContent = county.governor;
             spantd2.textContent = county.name;
             
