@@ -1,421 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Open Governance</title>
-        <link href="./main.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header class=""></header>
-        <div class="signup" id="signup">
-            <div class="signupPageBox">
-                <span class="signupborderLine"></span>
-                <form>
-                    <h2>Sign Up</h2>
-                    <div class="signupInput">
-                        <input type="email" name="email" id="email" required="required" />
-                        <span>Email</span>
-                        <i></i>
-                    </div>
-                    <div class="signupInput">
-                        <input type="text" name="username" id="username" required="required" />
-                        <span>Username</span>
-                        <i></i>
-                    </div>
-                    <div class="signupInput">
-                        <input type="tel" name="tel" id="tel" required="required" />
-                        <span>Phone No</span>
-                        <i></i>
-                    </div>
-                     <div class="signupInput">
-                    <select name="county" id="county-select" required="required">
-                        <option value="county">Select Country</option>
-                     </select>  
-                     <i></i>
-                     </div> 
-                    <div class="signupInput">
-                        <input type="password" name="password" id="password" required="required" />
-                        <span>Password</span>
-                        <i></i>
-                    </div>
-                    <div class="signupInput">
-                        <input type="password" name="confirmpassword" id="confirmpassword" required="required" />
-                        <span>Confirm Password</span>
-                        <i></i>
-                    </div>
-                    <div class="signupLinks">
-                        <a href="#">Alread have account</a>
-                        <a href="#" id="logInId">Login</a>
-                    </div>
-                    <input type="submit" id="createSignUp" value="SignUp" />
-                </form>
-            </div>
-        </div>
-        <div class="login" id="login">
-            <div class="loginPageBox">
-                <span class="borderLine"></span>
-                <form>
-                    <h2>Sign in</h2>
-                    <div class="loginInput">
-                        <input type="email" name="email" id="loginemail" required="required" />
-                        <span>Email</span>
-                        <i></i>
-                    </div>
-                    <div class="loginInput">
-                        <input type="password" name="password" id="loginpassword" required="required" />
-                        <span>Password</span>
-                        <i></i>
-                    </div>
-                    <div class="loginLinks">
-                        <a href="#">Forgot password?</a>
-                        <a href="#" id="signUpId">Sign up</a>
-                    </div>
-                    <input type="submit" value="Login"  id="loginUser"/>
-                </form>
-            </div>
-        </div>
-        <div class="container" id="dashboard">
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="icon">
-                                <img src="./public/images/opengovernance.png" alt="Open Governance" />
-                            </span>
-                            <span class="title">
-                                <h2>Open Governance</h2>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  id="tab1">
-                            <span class="icon">
-                                <i class="fa-solid fa-house"></i>
-                            </span>
-                            <span class="title">
-                                Dashboard
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  id="tab2">
-                            <span class="icon">
-                                <i class="fa-solid fa-flag"></i>
-                            </span>
-                            <span class="title">
-                                Reports
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="tab3">
-                            <span class="icon">
-                                <i class="fa-solid fa-message"></i>
-                            </span>
-                            <span class="title">
-                                Messages
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a  id="tab4">
-                            <span class="icon">
-                                <i class="fa-solid fa-circle-info"></i>
-                            </span>
-                            <span class="title">
-                                Help
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="tab5" >
-                            <span class="icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </span>
-                            <span class="title">
-                                Profile
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="logoutId">
-                            <span class="icon">
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                            </span>
-                            <span class="title">
-                                Logout
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Open Governance</title>
+      <link href="./main.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header class=""></header>
+      <div class="signup" id="signup">
+         <div class="signupPageBox">
+            <span class="signupborderLine"></span>
+            <form>
+               <h2>Sign Up</h2>
+               <div class="signupInput">
+                  <input type="email" name="email" id="email" required="required" />
+                  <span>Email</span>
+                  <i></i>
+               </div>
+               <div class="signupInput">
+                  <input type="text" name="username" id="username" required="required" />
+                  <span>Username</span>
+                  <i></i>
+               </div>
+               <div class="signupInput">
+                  <input type="tel" name="tel" id="tel" required="required" />
+                  <span>Phone No</span>
+                  <i></i>
+               </div>
+               <div class="signupInput">
+                  <select name="county" id="county-select" required="required">
+                     <option value="county">Select Country</option>
+                  </select>
+                  <i></i>
+               </div>
+               <div class="signupInput">
+                  <input type="password" name="password" id="password" required="required" />
+                  <span>Password</span>
+                  <i></i>
+               </div>
+               <div class="signupInput">
+                  <input type="password" name="confirmpassword" id="confirmpassword" required="required" />
+                  <span>Confirm Password</span>
+                  <i></i>
+               </div>
+               <div class="signupLinks">
+                  <a href="#">Alread have account</a>
+                  <a href="#" id="logInId">Login</a>
+               </div>
+               <input type="submit" id="createSignUp" value="SignUp" />
+            </form>
+         </div>
+      </div>
+      <div class="login" id="login">
+         <div class="loginPageBox">
+            <span class="borderLine"></span>
+            <form>
+               <h2>Sign in</h2>
+               <div class="loginInput">
+                  <input type="email" name="email" id="loginemail" required="required" />
+                  <span>Email</span>
+                  <i></i>
+               </div>
+               <div class="loginInput">
+                  <input type="password" name="password" id="loginpassword" required="required" />
+                  <span>Password</span>
+                  <i></i>
+               </div>
+               <div class="loginLinks">
+                  <a href="#">Forgot password?</a>
+                  <a href="#" id="signUpId">Sign up</a>
+               </div>
+               <input type="submit" value="Login"  id="loginUser"/>
+            </form>
+         </div>
+      </div>
+      <div class="container" id="dashboard">
+         <div class="nav">
+            <ul>
+               <li>
+                  <a href="#">
+                     <span class="icon">
+                     <img src="./public/images/opengovernance.png" alt="Open Governance" />
+                     </span>
+                     <span class="title">
+                        <h2>Open Governance</h2>
+                     </span>
+                  </a>
+               </li>
+               <li>
+                  <a  id="tab1">
+                  <span class="icon">
+                  <i class="fa-solid fa-house"></i>
+                  </span>
+                  <span class="title">
+                  Dashboard
+                  </span>
+                  </a>
+               </li>
+               <li>
+                  <a  id="tab2">
+                  <span class="icon">
+                  <i class="fa-solid fa-flag"></i>
+                  </span>
+                  <span class="title">
+                  Reports
+                  </span>
+                  </a>
+               </li>
+               <li>
+                  <a id="tab3">
+                  <span class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <span class="title">
+                  Notifications
+                  </span>
+                  </a>
+               </li>
+               <li>
+                  <a  id="tab4">
+                  <span class="icon">
+                  <i class="fa-solid fa-circle-info"></i>
+                  </span>
+                  <span class="title">
+                  Help
+                  </span>
+                  </a>
+               </li>
+               <li>
+                  <a id="tab5" >
+                  <span class="icon">
+                  <i class="fa-solid fa-gear"></i>
+                  </span>
+                  <span class="title">
+                  Profile
+                  </span>
+                  </a>
+               </li>
+               <li>
+                  <a id="logoutId">
+                  <span class="icon">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  </span>
+                  <span class="title">
+                  Logout
+                  </span>
+                  </a>
+               </li>
+            </ul>
+         </div>
          <div class="main">
-                <div class="topbar">
-                    <div class="toggle"></div>
-                    <div class="search">
-                        <label>
-                            <input type="text" placeholder="Search here" />
-                            <i class="fa-brands fa-searchengin"></i>
-                        </label>
-                    </div>
-                    <div class="user" id="loginUser" style="position: relative;">
-                        <img src="./public/images/user.png" id="loginUserImg" alt="User" />
-                        
-                        <!-- The Modal -->
-                        <div id="userModal" class="modal">
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Modal content goes here.</p>
-                            <di>
-                                    <h3>Username: <span id="modalName">Lewis Odero</span></h3>
-                                    <h3>County: <span id="modalLocation">Nairobi</span></h3>
-                                    <h3>Phone: <span id="modalNo">0706510628</span></h3>
-                                    <i class="fa-solid fa-user-pen"></i>
-                            </di>
-                          </div>
-                         
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tabcontent1">
-                <div class="cardBox">
-                    <div class="card " id="card1">
-                        <div>
-                            <div class="numbers budgetN">0.00</div>
-                            <div class="cardName budgetT">Total Budget</div>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                    </div>
-                    <div class="card" id="card2">
-                        <div>
-                            <div class="numbers cardEx">0.00</div>
-                            <div class="cardName">Expenditure</div>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                    </div>
-                    <div class="card" id="card3">
-                        <div>
-                            <div class="numbers">1,042</div>
-                            <div class="cardName">Projects</div>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                    </div>
-                    <div class="card" id="card4">
-                        <div>
-                            <div class="numbers">1,042</div>
-                            <div class="cardName">Projects</div>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                    </div>
-                 </div>
-                
-                 <!--Add graph -->
-                 <div class="grapParentBox">
-                 <div class="box1">
-                       
-                 </div>
-                 <div class="box2">
-                         <canvas id="myChart"></canvas>
-                 </div>
-                 </div>
-                 <div class="details">
-                    <div class="recentOrders">
-                        <div class="cardHeader">
-                            <h2>Recent Projects</h2>
-                            <a href="#" class="btn">View All</a>
-                        </div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Budget</td>
-                                    <td>County</td>
-                                    <td>Status</td>
-                                </tr>
-                            </thead>
-                            <tbody id="projectId">
-                               <!--Dynamic projects --> 
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="recentCustomers">
-                        <div class="cardHeader">
-                            <h2>Governace</h2>
-                            <a href="#" class="btn">View All</a>
-                        </div>
-                        <table>
-                            <tbody id="govertb">
-                               
-                            </tbody>
-                        </table>
-                    </div>
-                 </div>
-                 </div>
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 
-                 <div  class="tabcontent2" style="display:none"  >
-                         <div class="issueTop">
-                                 <div><h2>Issues</h2></div>
-                                 <div id="reportIddd" style="display: block;"><button id="reportIssue">Report</button></div>
-                                 
-                                 <div class="form" id="formPrentId">
-                                         <form>
-                                                 
-                                             <h2>Report Issue</h2>
-                                             
-                                              <div class="issueInput">
-                                                      <div class="issueInput">
-                                                          <input type="text" name="issueName" id="issueNameId" />
-                                                          <span>Description</span>
-                                                          <i></i>
-                                                      </div>
-                                             </div>
-                                             <div class="issueInput">
-                                                 <input type="text" name="issueType" id="issueTypeId" />
-                                                 <span>Type</span>
-                                                 <i></i>
-                                             </div>
-                                             <div class="issueInput">
-                                             <select id="issueddd" >
-                                                    
-                                                        <option >Location</option>
-                                             </select>
-                                             </div>
-                                             <div class="issueInput">
-                                                 <input type="text" name="issueStatus" id="issueStatusId" />
-                                                 <span>Status</span>
-                                                 <i></i>
-                                             </div>
-                                             
-                                           
-                                             <input type="submit" value="Submit Issue"  id="issueSubmitId"/>
-                                              
-                                         </form>
-                                              
-                                 
-                                 </div>
-                         
-                         </div>
-                        
-                     
-                      <table>
-                              <thead>
-                                  <tr>
-                                      <td>Issue</td>
-                                      <td>Type</td>
-                                      <td>Location</td>
-                                      <td>Status</td>
-                                  </tr>
-                              </thead>
-                              
-                              <tbody id="issuesId">
-                                 <!--Dynamic projects --> 
-                              </tbody>
-                              
-                      </table>
-                     
-                   </div>
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   <div class="tabcontent3" style="display:none">
-                       <h2>Zoom in</h2>
-                       <p>Tokyo is the capital of Japan.</p>
-                       <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+            <div class="topbar">
+               <div class="toggle"></div>
+               <div class="search">
+                  <label>
+                  <input type="text" placeholder="Search here" />
+                  <i class="fa-brands fa-searchengin"></i>
+                  </label>
+               </div>
+               <div class="user" id="loginUser" style="position: relative;">
+                  <img src="./public/images/user.png" id="loginUserImg" alt="User" />
+                  <!-- The Modal -->
+                  <div id="userModal" class="modal">
+                     <!-- Modal content -->
+                     <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Modal content goes here.</p>
+                        <di>
+                           <h3>Username: <span id="modalName">Lewis Odero</span></h3>
+                           <h3>County: <span id="modalLocation">Nairobi</span></h3>
+                           <h3>Phone: <span id="modalNo">0706510628</span></h3>
+                           <i class="fa-solid fa-user-pen"></i>
+                        </di>
                      </div>
-                     <div  class="tabcontent4" style="display:none">
-                         <h2>Zoom in</h2>
-                         <p>Tokyo is the capital of Japan.</p>
-                         <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
-                       </div>
-                       
-                       <div  class="tabcontent5" style="display:none">
-                               
-                               <div class="cardProfile">
-                                       <button id="deleteAcount" style="background: red;color: white;">Delete Account</button>
-                                 <img src="./public/images/user.png" alt="Lewis" id="userSetingid" style="width:100%">
-                                 <h1 id="usernameSetingid">Username</h1>
-                                 <p class="title" id="useremailSetingid">username@gmail.com</p>
-                                 <p id="userlocationSetingid">Nairobi</p>
-                                 <div style="margin: 24px 0;">
-                                   <a href="#"><i class="fa fa-dribbble"></i></a> 
-                                   <a href="#"><i class="fa fa-twitter"></i></a>  
-                                   <a href="#"><i class="fa fa-linkedin"></i></a>  
-                                   <a href="#"><i class="fa fa-facebook"></i></a> 
-                                 </div>
-                                 <p><button id="openSetingPop">Edit Profile</button></p>
-                                 <div class="form-opup" id="myFormPop">
-                                   <form method="PATCH" class="form-container" id="settingForm">
-                                     
-                                          <label for="usernameset"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="usernameset" id="usernameset">
-                                 
-                                     <label for="setemail"><b>Email</b></label>
-                                     <input type="text" placeholder="Enter Email" name="setemail" id="setemail">
-                                          <label for="setlocation"><b>Location</b></label>
-                                        <select id="setlocation" >
-                                                <option >Location</option>
-                                        </select>
-                                        
-                                        <label for="setimg"><b>Image</b></label>
-                                        <input type="text" placeholder="Enter Image" name="setimg" id="setimg">
-                                 
-                                     <label for="psw"><b>Password</b></label>
-                                     <input type="password" placeholder="Enter Password" name="psw" id="psw">
-                                 
-                                     <button type="submit" class="btn">Confirm</button>
-                                     <button type="button" class="btn cancel" id="setclosing">Close</button>
-                                   </form>
-                                 </div>
-                               </div>
-                               
-                               
-                              
-
-                         </div>
-                </div> 
-            
-            
-        </div>
-        <script src="./app.js"></script>
-        <script src="https://kit.fontawesome.com/1ebc760c0c.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-        <script src="./charts.js"></script>
-    </body>
+                  </div>
+               </div>
+            </div>
+            <div class="tabcontent1">
+               <div class="cardBox">
+                  <div class="card " id="card1">
+                     <div>
+                        <div class="numbers budgetN">0.00</div>
+                        <div class="cardName budgetT">Total Budget</div>
+                     </div>
+                     <div class="iconBox">
+                        <i class="fa-solid fa-briefcase"></i>
+                     </div>
+                  </div>
+                  <div class="card" id="card2">
+                     <div>
+                        <div class="numbers cardEx">0.00</div>
+                        <div class="cardName">Expenditure</div>
+                     </div>
+                     <div class="iconBox">
+                        <i class="fa-solid fa-scale-unbalanced"></i>
+                     </div>
+                  </div>
+                  <div class="card" id="card3">
+                     <div>
+                        <div class="numbers" id="totalPop">0.00</div>
+                        <div class="cardName">Total Population</div>
+                     </div>
+                     <div class="iconBox">
+                        <i class="fa-solid fa-people-group"></i>
+                     </div>
+                  </div>
+                  <div class="card" id="card4">
+                     <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Projects</div>
+                     </div>
+                     <div class="iconBox">
+                        <i class="fa-solid fa-briefcase"></i>
+                     </div>
+                  </div>
+               </div>
+               <!--Add graph -->
+               <div class="grapParentBox">
+                  <div class="box1">
+                          <h3 style="">Counties Details</h3>
+                  </div>
+                  <div class="box2">
+                     <canvas id="myChart"></canvas>
+                  </div>
+               </div>
+               <div class="details">
+                  <div class="recentOrders">
+                     <div class="cardHeader">
+                        <h2>Recent Projects</h2>
+                        <a href="#" class="btn">View All</a>
+                     </div>
+                     <table>
+                        <thead>
+                           <tr>
+                              <td>Name</td>
+                              <td>Budget</td>
+                              <td>County</td>
+                              <td>Status</td>
+                           </tr>
+                        </thead>
+                        <tbody id="projectId">
+                           <!--Dynamic projects --> 
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="recentCustomers">
+                     <div class="cardHeader">
+                        <h2>Governers</h2>
+                        <a href="#" class="btn">View All</a>
+                     </div>
+                     <table>
+                        <tbody id="govertb">
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div  class="tabcontent2" style="display:none"  >
+               <div class="issueTop">
+                  <div>
+                     <h2>Issues</h2>
+                  </div>
+                  <div id="reportIddd" style="display: block;"><button id="reportIssue">Report</button></div>
+                  <div class="form" id="formPrentId">
+                     <form>
+                        <h2>Report Issue</h2>
+                        <div class="issueInput">
+                           <div class="issueInput">
+                              <input type="text" name="issueName" id="issueNameId" />
+                              <span>Description</span>
+                              <i></i>
+                           </div>
+                        </div>
+                        <div class="issueInput">
+                           <input type="text" name="issueType" id="issueTypeId" />
+                           <span>Type</span>
+                           <i></i>
+                        </div>
+                        <div class="issueInput">
+                           <select id="issueddd" >
+                              <option >Location</option>
+                           </select>
+                        </div>
+                        <div class="issueInput">
+                           <input type="text" name="issueStatus" id="issueStatusId" />
+                           <span>Status</span>
+                           <i></i>
+                        </div>
+                        <input type="submit" value="Submit Issue"  id="issueSubmitId"/>
+                     </form>
+                  </div>
+               </div>
+               <table>
+                  <thead>
+                     <tr>
+                        <td>Issue</td>
+                        <td>Type</td>
+                        <td>Location</td>
+                        <td>Status</td>
+                     </tr>
+                  </thead>
+                  <tbody id="issuesId">
+                     <!--Dynamic projects --> 
+                  </tbody>
+               </table>
+            </div>
+            <div class="tabcontent3" style="display:none; padding: 20px;">
+               <h2>Notifications</h2>
+               <div class="notificationBox">
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="iconBox">
+                        <i class="fa-solid fa-bell"></i>
+                     </div>
+                     <div class="text">
+                        <h3>Project Approved</h3>
+                        <p>Your project has been approved by the county government.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div  class="tabcontent4" style="display:none">
+               <div class="faqcontainer">
+                  <h1>Frequently Asked Questions</h1>
+                  <details>
+                     <summary>What is the purpose of this app?</summary>
+                     <div>
+                        This app aims to promote <em> transparency and accountability</em> by providing detailed information about each county in Kenya, including their <em>governors, senators, women representatives, population, area, and capital.</em>
+                     </div>
+                  </details>
+                  <details>
+                     <summary>How can I search for information about a specific county?</summary>
+                     <div>
+                        You can search for information by using the search bar at the top of the app. Simply type in the name of the county, and the relevant information will be displayed.
+                     </div>
+                  </details>
+                  <details>
+                     <summary>How often is the data updated?</summary>
+                     <div>
+                        The data is updated regularly to ensure accuracy and <em>reflect any changes in the county officials or other key information.</em>
+                     </div>
+                  </details>
+                  <details>
+                     <summary>Where does the data come from?</summary>
+                     <div>
+                        The data is sourced from <em>official government publications and verified databases</em> to ensure accuracy and reliability.
+                     </div>
+                  </details>
+               </div>
+            </div>
+            <div  class="tabcontent5" style="display:none">
+               <div class="cardProfile">
+                  <button id="deleteAcount" style="background: red;color: white;">Delete Account</button>
+                  <img src="./public/images/user.png" alt="Lewis" id="userSetingid" style="width:100%">
+                  <h1 id="usernameSetingid">Username</h1>
+                  <p class="title" id="useremailSetingid">username@gmail.com</p>
+                  <p id="userlocationSetingid">Nairobi</p>
+                  <div style="margin: 24px 0;">
+                     <a href="#"><i class="fa fa-dribbble"></i></a> 
+                     <a href="#"><i class="fa fa-twitter"></i></a>  
+                     <a href="#"><i class="fa fa-linkedin"></i></a>  
+                     <a href="#"><i class="fa fa-facebook"></i></a> 
+                  </div>
+                  <p><button id="openSetingPop">Edit Profile</button></p>
+                  <div class="form-opup" id="myFormPop">
+                     <form method="PATCH" class="form-container" id="settingForm">
+                        <label for="usernameset"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="usernameset" id="usernameset">
+                        <label for="setemail"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="setemail" id="setemail">
+                        <label for="setlocation"><b>Location</b></label>
+                        <select id="setlocation" >
+                           <option >Location</option>
+                        </select>
+                        <label for="setimg"><b>Image</b></label>
+                        <input type="text" placeholder="Enter Image" name="setimg" id="setimg">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="psw">
+                        <button type="submit" class="btn">Confirm</button>
+                        <button type="button" class="btn cancel" id="setclosing">Close</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./app.js"></script>
+      <script src="https://kit.fontawesome.com/1ebc760c0c.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="./charts.js"></script>
+   </body>
 </html>
