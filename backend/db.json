@@ -473,16 +473,6 @@
       "password": "user2",
       "role": "user",
       "location": "Kilifi"
-    },
-    {
-      "id": "4809",
-      "username": "levos",
-      "email": "lewisodero@gmail.com",
-      "phone": "0706510628",
-      "password": "1234",
-      "role": "user",
-      "location": "Nairobi",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&s"
     }
   ],
   "elected_officials": [
