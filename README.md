@@ -1,4 +1,5 @@
 # Open Governance App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/98350de7-82b4-4f26-991b-2ac857c37202/deploy-status)](https://app.netlify.com/sites/open-governance-app/deploys)
 
 ### Project Problem Statement
 
