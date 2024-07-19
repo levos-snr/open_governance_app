@@ -1,5 +1,5 @@
  document.addEventListener('DOMContentLoaded', function () {
-  const badgetsURL = "http://localhost:3000/budget";
+  const badgetsURL = "https://server-vercel-vert.vercel.app/budget";
   
   //get all budgets from the database
   async function getBudgets() {
