@@ -1,1090 +1,932 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-
-body {
-    overflow-x: hidden;
-    background-color: #23242a;
+ body {
+     overflow-x: hidden;
+     background-color: #23242a;
 }
-
-.container {
-    position: relative;
-    width: 100%;
+ .container {
+     position: relative;
+     width: 100%;
 }
-
-.nav {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #1c1c1c;
-    transition: 0.5s;
-    overflow: hidden;
+ .nav {
+     position: fixed;
+     width: 300px;
+     height: 100%;
+     background-color: #1c1c1c;
+     transition: 0.5s;
+     overflow: hidden;
 }
-
-.nav.active {
-    width: 60px;
+ .nav.active {
+     width: 60px;
 }
-
-.nav ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+ .nav ul {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
 }
-
-.nav ul li {
-    position: relative;
-    width: 100%;
-    list-style: none;
+ .nav ul li {
+     position: relative;
+     width: 100%;
+     list-style: none;
 }
-
-.nav ul li:hover {
-    background-color: #1cc;
+ .nav ul li:hover {
+     background-color: #1cc;
 }
-
-.nav ul li:nth-child(1) {
-    margin-top: 20px;
+ .nav ul li:nth-child(1) {
+     margin-top: 20px;
 }
-
-.nav ul li:nth-child(1):hover {
-    background: transparent;
+ .nav ul li:nth-child(1):hover {
+     background: transparent;
 }
-
-.nav ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: #fff;
+ .nav ul li a {
+     position: relative;
+     display: block;
+     width: 100%;
+     display: flex;
+     text-decoration: none;
+     color: #fff;
 }
-
-.nav ul li a .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
+ .nav ul li a .icon {
+     position: relative;
+     display: block;
+     min-width: 60px;
+     height: 60px;
+     line-height: 60px;
+     text-align: center;
 }
-
-.nav ul li a .icon img {
-    width: 50px;
-    height: 50px;
+ .nav ul li a .icon img {
+     width: 50px;
+     height: 50px;
 }
-
-.nav ul li a .icon .fa-solid {
-    color: #fff;
-    font-size: 24px;
+ .nav ul li a .icon .fa-solid {
+     color: #fff;
+     font-size: 24px;
 }
-
-.nav ul li a .title {
-    position: relative;
-    display: block;
-    padding: 0 10px;
-    height: 60px;
-    line-height: 60px;
-    white-space: nowrap;
+ .nav ul li a .title {
+     position: relative;
+     display: block;
+     padding: 0 10px;
+     height: 60px;
+     line-height: 60px;
+     white-space: nowrap;
 }
-
-.main {
-    position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
-    min-height: 100vh;
-    background: #f5f5f5;
-    transition: 0.5s;
+ .main {
+     position: absolute;
+     width: calc(100% - 300px);
+     left: 300px;
+     min-height: 100vh;
+     background: #f5f5f5;
+     transition: 0.5s;
 }
-
-.main.active {
-    width: calc(100% - 60px);
-    left: 60px;
+ .main.active {
+     width: calc(100% - 60px);
+     left: 60px;
 }
-
-.main .topbar {
-    width: 100%;
-    background: #1c1c1c;
-    height: 60px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ .main .topbar {
+     width: 100%;
+     background: #1c1c1c;
+     height: 60px;
+     padding: 0 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
-
-.toggle {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+ .toggle {
+     position: relative;
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
 }
-
-.toggle::before {
-    content: "\f1de";
-    font-family: "fontAwesome";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    line-height: 60px;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
+ .toggle::before {
+     content: "\f1de";
+     font-family: "fontAwesome";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     line-height: 60px;
+     font-size: 24px;
+     text-align: center;
+     color: #fff;
 }
-
-.search {
-    position: relative;
-    width: 400px;
-    margin: 0 10px;
+ .search {
+     position: relative;
+     width: 400px;
+     margin: 0 10px;
 }
-
-.search label {
-    position: relative;
-    width: 100%;
+ .search label {
+     position: relative;
+     width: 100%;
 }
-
-.search label input {
-    width: 100%;
-    height: 40px;
-    border-radius: 40px;
-    padding: 5px 20px;
-    padding-left: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    outline: none;
+ .search label input {
+     width: 100%;
+     height: 40px;
+     border-radius: 40px;
+     padding: 5px 20px;
+     padding-left: 50px;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     outline: none;
 }
-
-.search label .fa-searchengin {
-    position: absolute;
-    left: 15px;
-    top: 4px;
-    color: #333;
-    font-size: 20px;
+ .search label .fa-searchengin {
+     position: absolute;
+     left: 15px;
+     top: 4px;
+     color: #333;
+     font-size: 20px;
 }
-
-.user {
-    position: relative;
-    min-width: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
+ .user {
+     position: relative;
+     min-width: 50px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     overflow: hidden;
+     cursor: pointer;
 }
-
-.user img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+ .user img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
-
-.cardBox {
-    poqstion: relative;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+ .cardBox {
+     poqstion: relative;
+     width: 100%;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 20px;
 }
-
-.cardBox .card {
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
+ .cardBox .card {
+     position: relative;
+     background: #fff;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+     transition: 0.5s;
 }
-
-.cardBox .card:hover {
-    transform: translateY(-2px);
+ .cardBox .card:hover {
+     transform: translateY(-2px);
 }
-
-.cardBox .card .numbers {
-    position: relative;
-    font-size: 2em;
-    font-weight: 500;
+ .cardBox .card .numbers {
+     position: relative;
+     font-size: 2em;
+     font-weight: 500;
 }
-.cardBox .card .cardName {
-        margin-top: 16px;
-    color: #333;
+ .cardBox .card .cardName {
+     margin-top: 16px;
+     color: #333;
 }
-
-.cardBox .card .iconBox {
-position: absolute;
-    font-size: 1.3em;
-    bottom: 16px;
-    right: 12px;
-    color: #333;
+ .cardBox .card .iconBox {
+     position: absolute;
+     font-size: 1.3em;
+     bottom: 16px;
+     right: 12px;
+     color: #333;
 }
-
 /* charts */
-.grapParentBox{
-        position: relative;
-        padding-top: 0;
-        width: 100%;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 20px;
-        min-height: 200px;
+ .grapParentBox{
+     position: relative;
+     padding-top: 0;
+     width: 100%;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     grid-gap: 20px;
+     min-height: 200px;
 }
-
-.grapParentBox .box1,
-.grapParentBox .box2{
-        position: relative;
-        background: #fff;
-        padding: 20px;
-        width: 100%;
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
-        border-radius: 20px;
+ .grapParentBox .box1, .grapParentBox .box2{
+     position: relative;
+     background: #fff;
+     padding: 20px;
+     width: 100%;
+     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+     border-radius: 20px;
 }
-
-.details {
-    position: relative;
-    padding-top: 0;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
+ .details {
+     position: relative;
+     padding-top: 0;
+     width: 100%;
+     padding: 20px;
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap: 20px;
 }
-
-.details .recentOrders {
-    position: relative;
-    min-height: 530px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ .details .recentOrders {
+     position: relative;
+     min-height: 530px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-.cardHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+ .cardHeader {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
 }
-
-.cardHeader h2 {
-    color: #333;
-    font-weight: 600;
+ .cardHeader h2 {
+     color: #333;
+     font-weight: 600;
 }
-
-.btn {
-    position: relative;
-    padding: 5px 10px;
-    background: #1c1c1c;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
+ .btn {
+     position: relative;
+     padding: 5px 10px;
+     background: #1c1c1c;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 6px;
 }
-
-.details table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+ .details table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 10px;
 }
-
-.details table thead td {
-    font-weight: 600;
+ .details table thead td {
+     font-weight: 600;
 }
-
-.details .recentOrders table tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ .details .recentOrders table tr {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.details .recentOrders table tr:last-child {
-    border-bottom: none;
+ .details .recentOrders table tr:last-child {
+     border-bottom: none;
 }
-
-.details .recentOrders table tbody tr:hover {
-    color: #fff;
-    background: #1cc;
+ .details .recentOrders table tbody tr:hover {
+     color: #fff;
+     background: #1cc;
 }
-
-.details .recentOrders table tr td {
-    padding: 9px 5px;
+ .details .recentOrders table tr td {
+     padding: 9px 5px;
 }
-.details .recentOrders table thead tr td:last-child,
-.details .recentOrders table tbody tr td:last-child {
-    text-align: right;
+ .details .recentOrders table thead tr td:last-child, .details .recentOrders table tbody tr td:last-child {
+     text-align: right;
 }
-
-.details .recentOrders table thead tr td:nth-child(2),
-.details .recentOrders table tbody tr td:nth-child(2) {
-    text-align: right;
-    padding-right: 20px;
+ .details .recentOrders table thead tr td:nth-child(2), .details .recentOrders table tbody tr td:nth-child(2) {
+     text-align: right;
+     padding-right: 20px;
 }
-
-.details .recentOrders table thead tr td:nth-child(3),
-.details .recentOrders table tbody tr td:nth-child(3) {
-    text-align: center;
+ .details .recentOrders table thead tr td:nth-child(3), .details .recentOrders table tbody tr td:nth-child(3) {
+     text-align: center;
 }
-
-.status {
-    position: relative;
-    padding: 5px 10px;
-    background: #1c1c1c;
-    color: #fff;
-    border-radius: 6px;
+ .status {
+     position: relative;
+     padding: 5px 10px;
+     background: #1c1c1c;
+     color: #fff;
+     border-radius: 6px;
 }
-
-.status.pending {
-    background: #f1c40f;
+ .status.pending {
+     background: #f1c40f;
 }
-
-.status.inprogress{
-        background: #3498db;
+ .status.inprogress{
+     background: #3498db;
 }
-
-.status.completed {
-    background: #2ecc71;
+ .status.completed {
+     background: #2ecc71;
 }
-
-.status.cancelled {
-    background: #e74c3c;
+ .status.cancelled {
+     background: #e74c3c;
 }
-
-.details .recentCustomers {
-    position: relative;
-    min-height: 530px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ .details .recentCustomers {
+     position: relative;
+     min-height: 530px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-.details .recentCustomers .imgBx {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
+ .details .recentCustomers .imgBx {
+     position: relative;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     overflow: hidden;
 }
-
-.details .recentCustomers .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+ .details .recentCustomers .imgBx img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
-
-.details .recentCustomers table tr:hover {
-    color: #fff;
-    background: #1cc;
+ .details .recentCustomers table tr:hover {
+     color: #fff;
+     background: #1cc;
 }
-
-.details .recentCustomers table tr td {
-    padding: 7px 10px;
+ .details .recentCustomers table tr td {
+     padding: 7px 10px;
 }
-
-.details .recentCustomers table tr td h4 {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.2em;
+ .details .recentCustomers table tr td h4 {
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 1.2em;
 }
-
-.details .recentCustomers table tr td h4 span {
-    font-weight: 400;
-    font-size: 14px;
-    color: red;
+ .details .recentCustomers table tr td h4 span {
+     font-weight: 400;
+     font-size: 14px;
+     color: red;
 }
-
-
 /* Modal Background */
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  right: 2em;
-  top: 3.5em;
-  width: 25%;
-  height: 40%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.6); 
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     right: 2em;
+     top: 3.5em;
+     width: 25%;
+     height: 40%;
+     overflow: auto;
+     background-color: rgba(0,0,0,0.6);
 }
-
-.modal-content h3{
-        font-size: 20px;
+ .modal-content h3{
+     font-size: 20px;
 }
-
-.modal-content h3 span{
-        font-size: 16px;
+ .modal-content h3 span{
+     font-size: 16px;
 }
-
-.modal-content i{
-        display: flex;
-        font-size: 20px;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        background: #1c1c1c;
-        color: #fff;
-        border-radius: 5px;
-        width: 100%;
-        height: 40px;
-        margin-top: 20px;
+ .modal-content i{
+     display: flex;
+     font-size: 20px;
+     cursor: pointer;
+     align-items: center;
+     justify-content: center;
+     background: #1c1c1c;
+     color: #fff;
+     border-radius: 5px;
+     width: 100%;
+     height: 40px;
+     margin-top: 20px;
 }
-.modal-content i:hover{
-        background: #333;
+ .modal-content i:hover{
+     background: #333;
 }
 /* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; 
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+ .modal-content {
+     background-color: #fefefe;
+     margin: 15% auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
 }
-
 /* Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 3px;
-  padding: 0 10px;
+ .close {
+     color: #aaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+     margin: 3px;
+     padding: 0 10px;
 }
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+ .close:hover, .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
 }
-
-
-
 /* issue */
-
 /* .issueTop{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px;
 }
-
-.issueTop button{
-        position: relative;
-         padding: 5px 10px;
-        background: #1c1c1c;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px; 
-        height: 40px;
-        width: 100px;
-} */
-
+ .issueTop button{
+     position: relative;
+     padding: 5px 10px;
+     background: #1c1c1c;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 6px;
+     height: 40px;
+     width: 100px;
+}
+ */
 /* #formPrentId{
-        display: none;
-} */
-
-.tabcontent2 {
-        display: none;
-        position: relative;
-        padding: 30px;
+     display: none;
 }
-
-.issueTop {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px;
+ */
+ .tabcontent2 {
+     display: none;
+     position: relative;
+     padding: 30px;
 }
-
-.issueTop button {
-        position: relative;
-        padding: 5px 10px;
-        background: #1c1c1c;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        height: 40px;
-        width: 100px;
+ .issueTop {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 20px;
 }
-
-#formPrentId {
-    display: none; 
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    width: 500px;
-    height: 300px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ .issueTop button {
+     position: relative;
+     padding: 5px 10px;
+     background: #1c1c1c;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 6px;
+     height: 40px;
+     width: 100px;
 }
-
-.issueInput {
-        margin-bottom: 15px;
-        position: relative;
+ #formPrentId {
+     display: none;
+     position: absolute;
+     top: 30%;
+     left: 30%;
+     width: 500px;
+     height: 300px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
-.issueInput input,
-.issueInput select {
-        width: 100%;
-           padding: 10px;
-           border: 1px solid #ccc;
-           border-radius: 5px;
-           outline: none;
-           background: #f9f9f9;
+ .issueInput {
+     margin-bottom: 15px;
+     position: relative;
 }
-
-.issueInput span {
-        position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #fff;
-            padding: 0 5px;
-            color: #666;
-            transition: 0.3s;
+ .issueInput input, .issueInput select {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     outline: none;
+     background: #f9f9f9;
 }
-
-.issueInput i {
-        position: absolute;
-           right: 10px;
-           top: 50%;
-           transform: translateY(-50%);
-           color: #666;
+ .issueInput span {
+     position: absolute;
+     left: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     background: #fff;
+     padding: 0 5px;
+     color: #666;
+     transition: 0.3s;
 }
-
-.issueInput input:focus + span, .issueInput select:focus + span {
-    top: -10px;
-    left: 10px;
-    color: #333;
-    font-size: 12px;
-    background: #fff;
+ .issueInput i {
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+     color: #666;
 }
-
-.issueInput input:focus, .issueInput select:focus {
-    border-color: #666;
+ .issueInput input:focus + span, .issueInput select:focus + span {
+     top: -10px;
+     left: 10px;
+     color: #333;
+     font-size: 12px;
+     background: #fff;
 }
-
-#issueSubmitId {
-        width: 100%;
-           padding: 10px;
-           border: none;
-           border-radius: 5px;
-           background: #1c1c1c;
-           color: #fff;
-           cursor: pointer;
-           transition: 0.3s;
+ .issueInput input:focus, .issueInput select:focus {
+     border-color: #666;
 }
-
-#issueSubmitId:hover {
-    background: #333;
+ #issueSubmitId {
+     width: 100%;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     background: #1c1c1c;
+     color: #fff;
+     cursor: pointer;
+     transition: 0.3s;
 }
-
-.tabcontent2 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+ #issueSubmitId:hover {
+     background: #333;
 }
-
-.tabcontent2 table thead td {
-    font-weight: 600;
-   
+ .tabcontent2 table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 10px;
 }
-
-.tabcontent2 table tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ .tabcontent2 table thead td {
+     font-weight: 600;
 }
-
-.tabcontent2 table tr:last-child {
-    border-bottom: none;
+ .tabcontent2 table tr {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.tabcontent2 table tbody tr:hover {
-    color: #fff;
-    background: #1cc;
+ .tabcontent2 table tr:last-child {
+     border-bottom: none;
 }
-
-.tabcontent2 table td {
-    padding: 9px 5px;
+ .tabcontent2 table tbody tr:hover {
+     color: #fff;
+     background: #1cc;
 }
-
-.tabcontent2 table td:last-child {
-    text-align: right;
+ .tabcontent2 table td {
+     padding: 9px 5px;
 }
-
-.tabcontent2 table thead tr td:last-child,
-.tabcontent2 table tbody tr td:last-child {
-    text-align: right;
+ .tabcontent2 table td:last-child {
+     text-align: right;
 }
-
-.tabcontent2 table thead tr td:nth-child(2),
-.tabcontent2 table tbody tr td:nth-child(2) {
-    text-align: right;
-    padding-right: 20px;
+ .tabcontent2 table thead tr td:last-child, .tabcontent2 table tbody tr td:last-child {
+     text-align: right;
 }
-
-.tabcontent2 table thead tr td:nth-child(3),
-.tabcontent2 table tbody tr td:nth-child(3) {
-    text-align: center;
+ .tabcontent2 table thead tr td:nth-child(2), .tabcontent2 table tbody tr td:nth-child(2) {
+     text-align: right;
+     padding-right: 20px;
 }
-
-
-
-
-
-@media (max-width: 992px){
-        .grapParentBox{
-                grid-template-columns: 1fr;
-                height: auto;
-        }
-        .nav{
-                left: -300px;
-        }
-        .nav.active{
-                left: 0;
-                width: 300px;
-        }
-        .main{
-                width: 100%;
-                left: 0;
-        }
-        .main.active{
-                width: calc(100% - 300px);
-                left: 300px;
-        }
-        .cardBox{
-                grid-template-columns: repeat(2, 1fr);
-        }
-       
+ .tabcontent2 table thead tr td:nth-child(3), .tabcontent2 table tbody tr td:nth-child(3) {
+     text-align: center;
 }
-@media (max-width: 768px){
-        .details{
-                grid-template-columns: repeat(1,1fr)
-        }
-        .cardHeader h2{
-                font-weight: 600;
-                font-size: 18px;
-                
-        }
-}
-
-
-@media (max-width: 480px){
-        .cardBox{
-               
-                grid-template-columns: repeat(1, 1fr);
-        }
-        
-        .details .recentOrders{
-                overflow-x: auto;
-        }
-        
-        .details .recentOrders table{
-                width: 600px;
-        }
-        
-        .nav{
-                width: 100%;
-                left: -100%;
-                z-index: 1000 ;
-        }
-        
-        .nav.active{
-                left: 0;
-                width: 100%;
-                
-        }
-        
-        .toggle.active{
-                position: fixed;
-                z-index: 10000;
-                top: 10px;
-                right: 150px;
-        }
-        
-        .toggle.active:before{
-                content: "\f00d";
-        }
-
-        
-        
-}
-
-
-
-
-#login,
-#signup {
-    display: none;
-}
-
-.login,
-.signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #23242a;
-}
-
-.loginPageBox {
-    position: relative;
-    width: 380px;
-    background: #1c1c1c;
-    height: 420px;
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.signupPageBox {
-    position: relative;
-    width: 380px;
-    background: #1c1c1c;
-    height: 680px;
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 1;
-    margin: 30px;
-}
-
-.loginPageBox::before,
-.signupPageBox::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 300px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
-    z-index: -1;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-}
-.signupPageBox::before {
-    height: 680px !important;
-}
-.loginPageBox::after,
-.signupPageBox::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 380px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
-    z-index: -1;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: 3s;
-}
-.signupPageBox::after {
-    height: 680px !important;
-}
-
-.borderLine,
-.signupborderLine {
-    position: absolute;
-    top: 0;
-    inset: 0;
-}
-
-.borderLine::before,
-.signupborderLine::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 300px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
-    z-index: 0;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -1.5s;
-}
-.signupborderLine::before {
-    height: 680px !important;
-}
-
-.borderLine::after,
-.signupborderLine::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 300px;
-    height: 420px;
-    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
-    z-index: 0;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -4.5s;
-}
-
-.signupborderLine::after {
-    height: 680px !important;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
+ @media (max-width: 992px){
+     .grapParentBox{
+         grid-template-columns: 1fr;
+         height: auto;
     }
-    100% {
-        transform: rotate(360deg);
+     .nav{
+         left: -300px;
+    }
+     .nav.active{
+         left: 0;
+         width: 300px;
+    }
+     .main{
+         width: 100%;
+         left: 0;
+    }
+     .main.active{
+         width: calc(100% - 300px);
+         left: 300px;
+    }
+     .cardBox{
+         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-.loginPageBox form,
-.signupPageBox form {
-    position: absolute;
-    inset: 4px;
-    background: #222;
-    padding: 50px 40px;
-    border-radius: 8px;
+ @media (max-width: 768px){
+     .details{
+         grid-template-columns: repeat(1,1fr) 
+    }
+     .cardHeader h2{
+         font-weight: 600;
+         font-size: 18px;
+    }
 }
-
-.loginPageBox form h2,
-.signupPageBox form h2 {
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1em;
+ @media (max-width: 480px){
+     .cardBox{
+         grid-template-columns: repeat(1, 1fr);
+    }
+     .details .recentOrders{
+         overflow-x: auto;
+    }
+     .details .recentOrders table{
+         width: 600px;
+    }
+     .nav{
+         width: 100%;
+         left: -100%;
+         z-index: 1000 ;
+    }
+     .nav.active{
+         left: 0;
+         width: 100%;
+    }
+     .toggle.active{
+         position: fixed;
+         z-index: 10000;
+         top: 10px;
+         right: 150px;
+    }
+     .toggle.active:before{
+         content: "\f00d";
+    }
 }
-
-.loginPageBox form .loginInput,
-.signupPageBox form .signupInput{
-    position: relative;
-    width: 300px;
-    margin-top: 35px;
+ #login, #signup {
+     display: none;
 }
-
-
-
-.loginPageBox form .loginInput input,
-.signupPageBox form .signupInput input,
-.signupPageBox form .signupInput select
-{
-    position: relative;
-    width: 100%;
-    padding: 20px 10px 10px;
-    background: transparent;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    color: #23242a;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 10;
+ .login, .signup {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: #23242a;
 }
-
-.loginPageBox form .loginInput span,
-.signupPageBox form .signupInput span
-{
-    position: absolute;
-    left: 0;
-    padding: 20px 0px 10px;
-    pointer-events: none;
-    color: #8f8f8f;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
+ .loginPageBox {
+     position: relative;
+     width: 380px;
+     background: #1c1c1c;
+     height: 420px;
+     border-radius: 8px;
+     overflow: hidden;
+     z-index: 1;
 }
-
-.loginPageBox form .loginInput input:valid ~ span,
-.loginPageBox form .loginInput input:focus ~ span,
-.signupPageBox form .signupInput input:valid ~ span,
-.signupPageBox form .signupInput input:focus ~ span,
-.signupPageBox form .signupInput select:valid ~ span,
-.signupPageBox form .signupInput select:focus ~ span
-{
-    color: #fff;
-    font-size: 0.8em;
-    transform: translateY(-34px);
+ .signupPageBox {
+     position: relative;
+     width: 380px;
+     background: #1c1c1c;
+     height: 680px;
+     border-radius: 8px;
+     overflow: hidden;
+     z-index: 1;
+     margin: 30px;
 }
-
-.loginPageBox form .loginInput i,
-.signupPageBox form .signupInput i {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: 0.5s;
-    pointer-events: none;
+ .loginPageBox::before, .signupPageBox::before {
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 300px;
+     height: 420px;
+     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+     z-index: -1;
+     transform-origin: bottom right;
+     animation: animate 6s linear infinite;
 }
-
-.loginPageBox form .loginInput input:valid ~ i,
-.loginPageBox form .loginInput input:focus ~ i,
-.signupPageBox form .signupInput input:valid ~ i,
-.signupPageBox form .signupInput input:focus ~ i ,
-.signupPageBox form .signupInput select:valid ~ i,
-.signupPageBox form .signupInput select:focus ~ i{
-    height: 44px;
+ .signupPageBox::before {
+     height: 680px !important;
 }
-
-.loginLinks,
-.signupLinks {
-    display: flex;
-    justify-content: space-between;
+ .loginPageBox::after, .signupPageBox::after {
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 380px;
+     height: 420px;
+     background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+     z-index: -1;
+     transform-origin: bottom right;
+     animation: animate 6s linear infinite;
+     animation-delay: 3s;
 }
-
-.loginLinks a,
-.signupLinks a {
-    margin: 10px 0;
-    font-size: 0.8em;
-    color: #8f8f8f;
-    text-decoration: none;
+ .signupPageBox::after {
+     height: 680px !important;
 }
-
-.loginPageBox form .loginLinks a:hover,
-.loginPageBox form .loginLinks a:nth-child(2),
-.signupPageBox form .signupLinks a:hover,
-.signupPageBox form .signupLinks a:nth-child(2) {
-    color: #fff;
+ .borderLine, .signupborderLine {
+     position: absolute;
+     top: 0;
+     inset: 0;
 }
-
-.loginPageBox form input[type="submit"],
-.signupPageBox form input[type="submit"] {
-    border: none;
-    outline: none;
-    padding: 9px 25px;
-    background: #fff;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius: 4px;
-    font-weight: 600;
-    width: 100%;
+ .borderLine::before, .signupborderLine::before {
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 300px;
+     height: 420px;
+     background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+     z-index: 0;
+     transform-origin: bottom right;
+     animation: animate 6s linear infinite;
+     animation-delay: -1.5s;
 }
-
-.loginPageBox form input[type="submit"]:active,
-.signupPageBox form input[type="submit"]:active {
-    opacity: 0.8;
+ .signupborderLine::before {
+     height: 680px !important;
 }
-
+ .borderLine::after, .signupborderLine::after {
+     content: "";
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 300px;
+     height: 420px;
+     background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+     z-index: 0;
+     transform-origin: bottom right;
+     animation: animate 6s linear infinite;
+     animation-delay: -4.5s;
+}
+ .signupborderLine::after {
+     height: 680px !important;
+}
+ @keyframes animate {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
+ .loginPageBox form, .signupPageBox form {
+     position: absolute;
+     inset: 4px;
+     background: #222;
+     padding: 50px 40px;
+     border-radius: 8px;
+}
+ .loginPageBox form h2, .signupPageBox form h2 {
+     color: #fff;
+     font-weight: 500;
+     text-align: center;
+     letter-spacing: 0.1em;
+}
+ .loginPageBox form .loginInput, .signupPageBox form .signupInput{
+     position: relative;
+     width: 300px;
+     margin-top: 35px;
+}
+ .loginPageBox form .loginInput input, .signupPageBox form .signupInput input, .signupPageBox form .signupInput select {
+     position: relative;
+     width: 100%;
+     padding: 20px 10px 10px;
+     background: transparent;
+     outline: none;
+     border: none;
+     box-shadow: none;
+     color: #23242a;
+     font-size: 1em;
+     letter-spacing: 0.05em;
+     transition: 0.5s;
+     z-index: 10;
+}
+ .loginPageBox form .loginInput span, .signupPageBox form .signupInput span {
+     position: absolute;
+     left: 0;
+     padding: 20px 0px 10px;
+     pointer-events: none;
+     color: #8f8f8f;
+     font-size: 1em;
+     letter-spacing: 0.05em;
+     transition: 0.5s;
+}
+ .loginPageBox form .loginInput input:valid ~ span, .loginPageBox form .loginInput input:focus ~ span, .signupPageBox form .signupInput input:valid ~ span, .signupPageBox form .signupInput input:focus ~ span, .signupPageBox form .signupInput select:valid ~ span, .signupPageBox form .signupInput select:focus ~ span {
+     color: #fff;
+     font-size: 0.8em;
+     transform: translateY(-34px);
+}
+ .loginPageBox form .loginInput i, .signupPageBox form .signupInput i {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background: #fff;
+     border-radius: 4px;
+     overflow: hidden;
+     transition: 0.5s;
+     pointer-events: none;
+}
+ .loginPageBox form .loginInput input:valid ~ i, .loginPageBox form .loginInput input:focus ~ i, .signupPageBox form .signupInput input:valid ~ i, .signupPageBox form .signupInput input:focus ~ i , .signupPageBox form .signupInput select:valid ~ i, .signupPageBox form .signupInput select:focus ~ i{
+     height: 44px;
+}
+ .loginLinks, .signupLinks {
+     display: flex;
+     justify-content: space-between;
+}
+ .loginLinks a, .signupLinks a {
+     margin: 10px 0;
+     font-size: 0.8em;
+     color: #8f8f8f;
+     text-decoration: none;
+}
+ .loginPageBox form .loginLinks a:hover, .loginPageBox form .loginLinks a:nth-child(2), .signupPageBox form .signupLinks a:hover, .signupPageBox form .signupLinks a:nth-child(2) {
+     color: #fff;
+}
+ .loginPageBox form input[type="submit"], .signupPageBox form input[type="submit"] {
+     border: none;
+     outline: none;
+     padding: 9px 25px;
+     background: #fff;
+     cursor: pointer;
+     font-size: 0.9em;
+     border-radius: 4px;
+     font-weight: 600;
+     width: 100%;
+}
+ .loginPageBox form input[type="submit"]:active, .signupPageBox form input[type="submit"]:active {
+     opacity: 0.8;
+}
 /* user settingpage */
-.tabcontent5{
-        padding: 2px;
-        overflow: hidden;
+ .tabcontent5{
+     padding: 2px;
+     overflow: hidden;
 }
-.cardProfile {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin:20px auto;
-  text-align: center;
-  font-family: arial;
+ .cardProfile {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     max-width: 300px;
+     margin:20px auto;
+     text-align: center;
+     font-family: arial;
 }
-.cardProfile img{
-        height: 300px;
-        width: 200px;
-        object-fit: cover;
-        
+ .cardProfile img{
+     height: 300px;
+     width: 200px;
+     object-fit: cover;
 }
-
-.cardProfile .title {
-  color: grey;
-  font-size: 18px;
+ .cardProfile .title {
+     color: grey;
+     font-size: 18px;
 }
-
-.cardProfile button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+ .cardProfile button {
+     border: none;
+     outline: 0;
+     display: inline-block;
+     padding: 8px;
+     color: white;
+     background-color: #000;
+     text-align: center;
+     cursor: pointer;
+     width: 100%;
+     font-size: 18px;
 }
-
-.cardProfile a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
+ .cardProfile a {
+     text-decoration: none;
+     font-size: 22px;
+     color: black;
 }
-
-.cardProfile button:hover, a:hover {
-  opacity: 0.7;
+ .cardProfile button:hover, a:hover {
+     opacity: 0.7;
 }
-
 /* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+ .open-button {
+     background-color: #555;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     opacity: 0.8;
+     position: fixed;
+     bottom: 23px;
+     right: 28px;
+     width: 280px;
 }
-
 /* The popup form - hidden by default */
-.form-opup {
-  display:none;
-  position: fixed;
-  bottom:6%;
-  right: 24%;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
- 
+ .form-opup {
+     display:none;
+     position: fixed;
+     bottom:6%;
+     right: 24%;
+     border: 3px solid #f1f1f1;
+     z-index: 9;
 }
-
 /* Add styles to the form container */
-.form-container {
-  max-width: 400px;
-  height: 490px;
-  padding: 10px;
-  background-color: white;
-
+ .form-container {
+     max-width: 400px;
+     height: 490px;
+     padding: 10px;
+     background-color: white;
 }
-
 /* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password],select {
-  width: 100%;
-  padding: 10px;
-  margin: 2px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+ .form-container input[type=text], .form-container input[type=password],select {
+     width: 100%;
+     padding: 10px;
+     margin: 2px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
 }
-
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+ .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+     background-color: #ddd;
+     outline: none;
 }
-
 /* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 10px 5px;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  margin-bottom:10px;
-  opacity: 0.8;
+ .form-container .btn {
+     background-color: #04AA6D;
+     color: white;
+     padding: 10px 5px;
+     border: none;
+     cursor: pointer;
+     width: 70%;
+     margin-bottom:10px;
+     opacity: 0.8;
 }
-
 /* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
+ .form-container .cancel {
+     background-color: red;
 }
-
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+ .form-container .btn:hover, .open-button:hover {
+     opacity: 1;
 }
+/* faq */
+ .faqcontainer{
+     margin: 0 auto;
+     max-width: 800px;
+     padding: 1em;
+}
+ .faqcontainer h1{
+     color: #303030;
+     text-align: center;
+}
+ .faqcontainer details{
+     background-color: #303030;
+     color: #fff;
+     font-size: 1.5rem;
+}
+ .faqcontainer summary {
+     padding: .5em 1.3rem;
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     transition: height 1s ease;
+}
+ .faqcontainer summary::-webkit-details-marker {
+     display: none;
+}
+ .faqcontainer summary:after{
+     content: "\002B";
+}
+ details[open] summary {
+     border-bottom: 1px solid #aaa;
+     margin-bottom: .5em;
+}
+ .faqcontainer details[open] summary:after{
+     content: "\00D7";
+}
+ .faqcontainer details[open] div{
+     padding: .5em 1em;
+}
+/* notification */
+ 
