@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const countiesURL = "http://localhost:3000/county";
-    const usersURL = "http://localhost:3000/users";
-    const badgetsURL = "http://localhost:3000/budget";
-    const expensesURL = "http://localhost:3000/expenditure";
-    const projectsURL = "http://localhost:3000/projects";
-    const issueURL = "http://localhost:3000/citizen_complaints"
+    const countiesURL = "https://server-vercel-vert.vercel.app/county";
+    const usersURL = "https://server-vercel-vert.vercel.app/users";
+    const badgetsURL = "https://server-vercel-vert.vercel.app/budget";
+    const expensesURL = "https://server-vercel-vert.vercel.app/expenditure";
+    const projectsURL = "https://server-vercel-vert.vercel.app/projects";
+    const issueURL = "https://server-vercel-vert.vercel.app/citizen_complaints"
     
     const select = document.getElementById('county-select');
     const signUpForm = document.getElementById('createSignUp');
