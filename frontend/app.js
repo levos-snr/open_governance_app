@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const projectsURL = "http://localhost:3000/projects";
     const issueURL = "http://localhost:3000/citizen_complaints"
     
-    
     const select = document.getElementById('county-select');
     const signUpForm = document.getElementById('createSignUp');
     const loginForm = document.querySelector('.login form');
@@ -19,9 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const issueSubmitId = document.getElementById('issueSubmitId');
     const logoutId = document.getElementById('logoutId');
     const loginUserImg = document.getElementById('loginUserImg');
-    
-    
-    
     
     // Get all tabs elements
     const tab1 = document.getElementById('tab1');
@@ -96,6 +92,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     
+    //open tab 5 when edit button is clicked
+    const openEditUser = document.getElementById('openEditUser');
+    openEditUser.addEventListener('click', function () {
+        hideAllTabs();
+        showTab(tabContent5);
+        const modal = document.getElementById("userModal");
+         modal.style.display = "none";   
+    });
+    
     
     // Toggle nav
     const toggle = document.querySelector('.toggle');
@@ -126,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function () {
             loginContainer.style.display = 'none';
             
             //using id check the authenticated user
-            getUsers().then(users => {
+             getUsers().then(users => {
                 users.forEach(user => {
                     if (user.id == JSON.parse(localStorage.getItem('user')).id) {
-                        loginUserImg.src = user.image;
+                        loginUserImg.src = user.image || './public/images/user.png';
                         
                         const modal = document.getElementById("userModal");
                         const span = document.getElementsByClassName("close")[0];
@@ -155,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         modalName.textContent = user.username;
                         modalLocation.textContent = user.location;
                         modalNo.textContent = user.phone;
-                        userSetingid.src = user.image;
+                        userSetingid.src = user.image || './public/images/user.png';
                         usernameSetingid.textContent = user.username;
                         useremailSetingid.textContent = user.email;
                         userlocationSetingid.textContent = user.location;
@@ -172,8 +177,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             });
                         });
                         
+                       
                         
-                        
+                        //edit user details
                         openSetingPopBtn.addEventListener('click', function () {
                             document.getElementById("myFormPop").style.display = "block";
                             document.querySelector('.tabcontent5').style.background = 'rgba(0, 0, 0, 0.8)';
@@ -206,19 +212,22 @@ document.addEventListener('DOMContentLoaded', function () {
                                         modalName.textContent = user.username;
                                         modalLocation.textContent = user.location;
                                         modalNo.textContent = user.phone;
-                                        userSetingid.src = user.image;
+                                        userSetingid.src = user.image || './public/images/user.png';
                                         usernameSetingid.textContent = user.username;
                                         useremailSetingid.textContent = user.email;
                                         userlocationSetingid.textContent = user.location;
                                         document.getElementById("myFormPop").style.display = "none";
                                         document.querySelector('.tabcontent5').style.background = '';
                                         document.querySelector('.tabcontent5').style.height = '';
+                                        loginUserImg.src = user.image || './public/images/user.png';
+
                                     })
                                     .catch(error => {
                                         alert('Error updating user')
                                     });
                             });
                         });
+                        
                         
                         setclosing.addEventListener('click', function () {
                             document.getElementById("myFormPop").style.display = "none";
@@ -233,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 
                 
-            });
+             });
             
             
             
@@ -326,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const phone = document.getElementById('tel').value;
         const password = document.getElementById('password').value;
         const location = document.getElementById('county-select').value;
-        const image = 'https://res.cloudinary.com/djx5h4cjt/image/upload/v1628580134/placeholder-image_oy9z9v.png';
+        const image = './public/images/user.png';
         
         const data = {
             username,
@@ -402,6 +411,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         
         if (response.ok) {
+                //get total users
+                const users = await response.json();
+                document.getElementById('totalUsers').textContent = users.length;
+                return users;
             return response.json();
         } else {
             throw new Error('Failed to fetch users');

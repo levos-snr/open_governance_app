@@ -3,6 +3,8 @@ const jsonServer = require('json-server')
 
 const server = jsonServer.create()
 
+const PORT = 3000
+
 // Uncomment to allow write operations
 const fs = require('fs')
 const path = require('path')
@@ -23,8 +25,8 @@ server.use(jsonServer.rewriter({
     '/blog/:resource/:id/show': '/:resource/:id'
 }))
 server.use(router)
-server.listen(3000, () => {
-    console.log('JSON Server is running')
+server.listen(PORT, () => {
+        console.log(`JSON Server is running on port ${PORT}`)
 })
 
 // Export the Server API

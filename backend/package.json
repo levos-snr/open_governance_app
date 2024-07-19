@@ -1,12 +1,15 @@
 {
-  "name": "json-server-vercel",
+  "name": "my-json-server",
   "version": "1.0.0",
-  "description": "Deploy JSON Server to Vercel",
+  "description": "Open Government Data API",
   "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "json-server": "^0.17.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
